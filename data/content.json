@@ -1,0 +1,730 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "name": "E-Commerce Platform",
+      "category": "SaaS Development",
+      "description": "Built a fully integrated online marketplace with inventory management, payment processing, and real-time analytics.",
+      "image": "/project1.jpg",
+      "gradient": "from-[#FF6B6B]/20 to-[#FF8E8E]/10",
+      "fullContent": "<h2>E-Commerce Platform</h2>\n<p>A comprehensive online marketplace solution with advanced features.</p>\n<h3>Key Features</h3>\n<ul><li>Inventory Management System</li><li>Payment Gateway Integration</li><li>Real-time Analytics Dashboard</li><li>Customer Relationship Management</li></ul>\n<h3>Results</h3>\n<p>Increased sales by 300% in the first quarter. Improved customer satisfaction scores significantly.</p>"
+    },
+    {
+      "id": "2",
+      "name": "SaaS Dashboard",
+      "category": "Web Development",
+      "description": "Designed and developed a modern B2B SaaS platform with custom dashboards, role-based access control, and API integrations.",
+      "image": "/project2.jpg",
+      "gradient": "from-[#4ECDC4]/20 to-[#6DD5CD]/10",
+      "fullContent": "<h2>B2B SaaS Dashboard</h2>\n<p>Modern platform with enterprise-grade features.</p>\n<h3>Features</h3>\n<ul><li>Custom Dashboards</li><li>Role-Based Access Control</li><li>Third-party API Integrations</li></ul>"
+    },
+    {
+      "id": "3",
+      "name": "Brand Campaign",
+      "category": "Marketing",
+      "description": "Executed a multi-channel marketing campaign including social media strategy, content creation, and performance optimization.",
+      "image": "/project3.jpg",
+      "gradient": "from-[#FFD93D]/20 to-[#FFE566]/10",
+      "fullContent": "<h2>Brand Campaign</h2>\n<p>Multi-channel marketing campaign that drove significant brand awareness.</p>\n<h3>Campaign Highlights</h3>\n<ul><li>Social Media Strategy</li><li>Content Creation</li><li>Performance Optimization</li></ul>"
+    },
+    {
+      "id": "4",
+      "name": "Mobile App Launch",
+      "category": "App Development",
+      "description": "Successfully launched a cross-platform mobile application with 50,000+ downloads in the first month and 4.8★ rating.",
+      "image": "/project4.jpg",
+      "gradient": "from-[#A8E6CF]/20 to-[#B9EADB]/10",
+      "fullContent": "<h2>Mobile App Launch</h2>\n<p>Cross-platform mobile application with exceptional user ratings.</p>\n<h3>Achievements</h3>\n<ul><li>50,000+ downloads in first month</li><li>4.8★ average rating</li><li>Featured on App Store</li></ul>"
+    }
+  ],
+  "blogs": [
+    {
+      "title": "The Future of Web Development in 2024",
+      "excerpt": "Exploring emerging trends and technologies shaping the next generation of web applications.",
+      "category": "Technology",
+      "date": "Dec 1, 2024",
+      "image": "/blog1.jpg",
+      "content": "<h2>The Future of Web Development: Trends and Technologies</h2>\n<p>Web development is rapidly evolving with new technologies and frameworks emerging constantly. In this article, we explore the key trends that are shaping the future of web development.</p>\n<h3>1. AI and Machine Learning Integration</h3>\n<p>Artificial intelligence is becoming increasingly integrated into web applications, enabling personalized user experiences and intelligent automation. From chatbots to predictive analytics, AI is transforming how we build and interact with web applications.</p>\n<h3>2. Progressive Web Applications (PWA)</h3>\n<p>PWAs continue to gain traction as they offer app-like experiences through web browsers. With features like offline functionality, push notifications, and fast loading times, PWAs are bridging the gap between web and native applications.</p>\n<h3>3. Edge Computing</h3>\n<p>Edge computing brings computation closer to the data source, reducing latency and improving performance. This technology is particularly beneficial for real-time applications and content delivery.</p>\n<h3>4. WebAssembly (WASM)</h3>\n<p>WebAssembly enables high-performance computing in the browser, allowing developers to build complex applications with near-native performance. This opens up new possibilities for web-based applications.</p>\n<h3>5. Serverless Architecture</h3>\n<p>Serverless computing continues to revolutionize backend development, allowing developers to focus on code without managing infrastructure. This approach reduces costs and improves scalability.</p>\n<p>The future of web development is exciting, with emerging technologies offering new possibilities for creating fast, scalable, and user-friendly applications.</p>",
+      "id": "future-of-web-development"
+    },
+    {
+      "id": "saas-growth-strategies",
+      "title": "SaaS Growth Strategies That Actually Work",
+      "excerpt": "Proven tactics to scale your SaaS business and increase customer lifetime value.",
+      "category": "Business",
+      "date": "Nov 28, 2024",
+      "image": "/blog2.jpg",
+      "content": "<h2>SaaS Growth Strategies That Actually Work</h2>\n<p>Growing a SaaS business requires a strategic approach. Here are proven tactics that work.</p>\n<h3>1. Product-Led Growth</h3>\n<p>Let your product sell itself through free trials and freemium models.</p>\n<h3>2. Customer Success</h3>\n<p>Focus on customer retention and reducing churn through proactive support.</p>\n<h3>3. Content Marketing</h3>\n<p>Build authority through valuable content that attracts and educates your audience.</p>"
+    },
+    {
+      "id": "ui-ux-best-practices",
+      "title": "UI/UX Best Practices for 2024",
+      "excerpt": "Design principles and patterns that create exceptional user experiences.",
+      "category": "Design",
+      "date": "Nov 25, 2024",
+      "image": "/blog3.jpg",
+      "content": "<h2>UI/UX Best Practices for 2024</h2>\n<p>Creating exceptional user experiences requires attention to detail and user-centric design.</p>\n<h3>1. Accessibility First</h3>\n<p>Design for all users including those with disabilities.</p>\n<h3>2. Mobile-First Design</h3>\n<p>Start with mobile layouts and scale up to desktop.</p>"
+    },
+    {
+      "id": "mobile-first-development",
+      "title": "Why Mobile-First Development Matters",
+      "excerpt": "Understanding the importance of mobile-first approach in modern web development.",
+      "category": "Development",
+      "date": "Nov 20, 2024",
+      "image": "/blog4.jpg",
+      "content": "<h2>Why Mobile-First Development Matters</h2>\n<p>Mobile traffic now exceeds desktop, making mobile-first development essential for success.</p>\n<h3>Benefits of Mobile-First</h3>\n<p>Improved performance, better user experience, and higher conversion rates.</p>"
+    },
+    {
+      "id": "digital-marketing-trends",
+      "title": "Digital Marketing Trends to Watch",
+      "excerpt": "Key marketing trends and strategies for staying ahead in the digital landscape.",
+      "category": "Marketing",
+      "date": "Nov 15, 2024",
+      "image": "/blog5.jpg",
+      "content": "<h2>Digital Marketing Trends to Watch</h2>\n<p>Stay ahead of the curve with these emerging marketing trends.</p>\n<h3>1. AI-Powered Marketing</h3>\n<p>Leverage AI for personalization and automation.</p>\n<h3>2. Video Content</h3>\n<p>Video continues to dominate social media and content marketing.</p>"
+    }
+  ],
+  "services": [
+    {
+      "id": "1",
+      "title": "Website Design & Development",
+      "slug": "website-design-development",
+      "description": "Custom-built, responsive websites that convert visitors into customers. From landing pages to full-scale platforms.",
+      "number": "01",
+      "subtitle": "High-Converting Websites That Drive Results",
+      "overview": "We create conversion-focused websites and landing pages that look premium and sell for you 24/7. From responsive design to seamless user experience, every pixel is optimized for your business growth.",
+      "features": [
+        {
+          "title": "Responsive Design",
+          "description": "Mobile-first design that works flawlessly on all devices and screen sizes."
+        },
+        {
+          "title": "Fast Performance",
+          "description": "Optimized for speed with average load times under 2 seconds."
+        },
+        {
+          "title": "SEO Optimized",
+          "description": "Built with search engine optimization in mind from the ground up."
+        },
+        {
+          "title": "Conversion Focused",
+          "description": "Every element designed to convert visitors into customers."
+        },
+        {
+          "title": "Secure & Reliable",
+          "description": "Enterprise-grade security and 99.9% uptime guarantee."
+        },
+        {
+          "title": "Easy to Manage",
+          "description": "Simple CMS for updating content without technical knowledge."
+        }
+      ],
+      "benefits": [
+        "Increase conversion rates by up to 300%",
+        "Improve search engine rankings",
+        "Reduce bounce rates significantly",
+        "Build customer trust with professional design",
+        "Faster onboarding for your sales team",
+        "Analytics dashboard for insights"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "Discovery & Strategy",
+          "description": "We dive deep into your business, goals, and target audience to create a winning strategy."
+        },
+        {
+          "step": 2,
+          "title": "Design & Wireframing",
+          "description": "Beautiful, functional designs that your users will love."
+        },
+        {
+          "step": 3,
+          "title": "Development",
+          "description": "Clean, scalable code built with modern technologies."
+        },
+        {
+          "step": 4,
+          "title": "Testing & QA",
+          "description": "Rigorous testing across all browsers and devices."
+        },
+        {
+          "step": 5,
+          "title": "Launch & Optimization",
+          "description": "Smooth launch with ongoing optimization for maximum results."
+        }
+      ],
+      "caseStudies": [
+        {
+          "title": "E-Commerce Platform Redesign",
+          "description": "Redesigned an outdated e-commerce site",
+          "result": "240% increase in conversions"
+        },
+        {
+          "title": "SaaS Landing Page",
+          "description": "Created a conversion-optimized landing page",
+          "result": "35% conversion rate"
+        },
+        {
+          "title": "Service Provider Website",
+          "description": "Built a lead generation powerhouse",
+          "result": "50+ qualified leads per month"
+        }
+      ],
+      "faq": [
+        {
+          "question": "How long does it take to build a website?",
+          "answer": "Typically 6-12 weeks depending on complexity. We provide a detailed timeline in our proposal."
+        },
+        {
+          "question": "Do you handle domain and hosting?",
+          "answer": "Yes, we can help with domain registration and hosting setup on platforms like Vercel or AWS."
+        },
+        {
+          "question": "Can you redesign my existing website?",
+          "answer": "Absolutely! We often redesign existing sites to improve performance and conversions."
+        },
+        {
+          "question": "Do you provide ongoing support? .",
+          "answer": ""
+        }
+      ],
+      "image": "/website-design.jpg",
+      "featuresText": "Responsive Design | Mobile-first design that works flawlessly on all devices and screen sizes.\nFast Performance | Optimized for speed with average load times under 2 seconds.\nSEO Optimized | Built with search engine optimization in mind from the ground up.\nConversion Focused | Every element designed to convert visitors into customers.\nSecure & Reliable | Enterprise-grade security and 99.9% uptime guarantee.\nEasy to Manage | Simple CMS for updating content without technical knowledge.",
+      "benefitsText": "Increase conversion rates by up to 300%\nImprove search engine rankings\nReduce bounce rates significantly\nBuild customer trust with professional design\nFaster onboarding for your sales team\nAnalytics dashboard for insights",
+      "processText": "1 | Discovery & Strategy | We dive deep into your business, goals, and target audience to create a winning strategy.\n2 | Design & Wireframing | Beautiful, functional designs that your users will love.\n3 | Development | Clean, scalable code built with modern technologies.\n4 | Testing & QA | Rigorous testing across all browsers and devices.\n5 | Launch & Optimization | Smooth launch with ongoing optimization for maximum results.",
+      "caseStudiesText": "E-Commerce Platform Redesign | Redesigned an outdated e-commerce site | 240% increase in conversions\nSaaS Landing Page | Created a conversion-optimized landing page | 35% conversion rate\nService Provider Website | Built a lead generation powerhouse | 50+ qualified leads per month",
+      "faqText": "How long does it take to build a website? | Typically 6-12 weeks depending on complexity. We provide a detailed timeline in our proposal.\nDo you handle domain and hosting? | Yes, we can help with domain registration and hosting setup on platforms like Vercel or AWS.\nCan you redesign my existing website? | Absolutely! We often redesign existing sites to improve performance and conversions.\nDo you provide ongoing support? ."
+    },
+    {
+      "id": "2",
+      "title": "SaaS & App Development",
+      "slug": "saas-app-development",
+      "description": "End-to-end SaaS and mobile app development. We build scalable, user-friendly solutions tailored to your business.",
+      "number": "02",
+      "subtitle": "From MVP to Market-Ready Product",
+      "overview": "We build scalable SaaS platforms and mobile apps designed for real users and real growth. From concept to launch, we handle every aspect of your product development.",
+      "features": [
+        {
+          "title": "Full-Stack Development",
+          "description": "Frontend, backend, database, and infrastructure all covered."
+        },
+        {
+          "title": "MVP to Scale",
+          "description": "Start lean with an MVP, then scale as your business grows."
+        },
+        {
+          "title": "API Integration",
+          "description": "Seamless integration with third-party services and tools."
+        },
+        {
+          "title": "User Authentication",
+          "description": "Secure authentication and authorization systems."
+        },
+        {
+          "title": "Payment Processing",
+          "description": "Stripe, PayPal, and other payment gateway integrations."
+        },
+        {
+          "title": "Analytics & Monitoring",
+          "description": "Built-in analytics and real-time monitoring dashboards."
+        }
+      ],
+      "benefits": [
+        "Launch faster with agile development methodology",
+        "Scale without infrastructure headaches",
+        "Reduce development costs by 40%",
+        "User-centric design throughout",
+        "Regular deployment and updates",
+        "Dedicated support team"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "Product Strategy",
+          "description": "Define your product vision, target users, and success metrics."
+        },
+        {
+          "step": 2,
+          "title": "MVP Development",
+          "description": "Build the core features needed to validate your idea."
+        },
+        {
+          "step": 3,
+          "title": "User Testing",
+          "description": "Get real feedback from early users and iterate."
+        },
+        {
+          "step": 4,
+          "title": "Scale & Enhance",
+          "description": "Add features and optimize based on user behavior."
+        },
+        {
+          "step": 5,
+          "title": "Launch & Grow",
+          "description": "Market-ready product with ongoing support."
+        }
+      ],
+      "caseStudies": [
+        {
+          "title": "Project Management SaaS",
+          "description": "Built a collaborative project management platform",
+          "result": "10K+ users in first year"
+        },
+        {
+          "title": "Analytics Dashboard",
+          "description": "Created a real-time analytics platform for agencies",
+          "result": "Raised $2M in funding"
+        },
+        {
+          "title": "Mobile Fitness App",
+          "description": "Developed cross-platform fitness tracking app",
+          "result": "50K+ downloads"
+        }
+      ],
+      "faq": [
+        {
+          "question": "What technologies do you use?",
+          "answer": "We use modern tech stack: React, Node.js, PostgreSQL, AWS, and more based on your needs."
+        },
+        {
+          "question": "How much does a SaaS app cost?",
+          "answer": "Typically $15K - $100K+ depending on complexity. We provide detailed estimates."
+        },
+        {
+          "question": "Do you help with fundraising?",
+          "answer": "Yes, we can help create technical documentation and prototypes for investor pitches."
+        },
+        {
+          "question": "What about ongoing maintenance?",
+          "answer": "We offer maintenance packages including updates, security patches, and monitoring."
+        }
+      ],
+      "image": "/saas-development.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Automation Systems & No-Code Pipelines",
+      "slug": "automation-no-code",
+      "description": "Streamline operations with custom automation workflows and no-code solutions that save time and reduce errors.",
+      "number": "03",
+      "subtitle": "Streamline Operations, Eliminate Manual Work",
+      "overview": "We stitch your tools together so leads, bookings, and operations run automatically in the background. Save time, reduce errors, and scale your business.",
+      "features": [
+        {
+          "title": "Lead Automation",
+          "description": "Automatically capture, nurture, and qualify leads."
+        },
+        {
+          "title": "Email Sequences",
+          "description": "Trigger-based email campaigns that convert."
+        },
+        {
+          "title": "Data Sync",
+          "description": "Keep all your tools in sync with real-time data flows."
+        },
+        {
+          "title": "Task Management",
+          "description": "Automated task creation and assignment."
+        },
+        {
+          "title": "Reporting",
+          "description": "Automatic reports and insights to your inbox."
+        },
+        {
+          "title": "Cost Effective",
+          "description": "No-code tools save on development while delivering results."
+        }
+      ],
+      "benefits": [
+        "Save 20+ hours per week on manual tasks",
+        "Reduce human error significantly",
+        "Improve response times to leads",
+        "Scale without adding staff",
+        "Better data organization",
+        "Increased team productivity"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "Process Audit",
+          "description": "Map out your current workflows and identify automation opportunities."
+        },
+        {
+          "step": 2,
+          "title": "Solution Design",
+          "description": "Design automation workflows using Zapier, Make, or custom code."
+        },
+        {
+          "step": 3,
+          "title": "Setup & Integration",
+          "description": "Connect your tools and build the automation workflows."
+        },
+        {
+          "step": 4,
+          "title": "Testing",
+          "description": "Thoroughly test all workflows for reliability."
+        },
+        {
+          "step": 5,
+          "title": "Training & Support",
+          "description": "Train your team and provide ongoing support."
+        }
+      ],
+      "caseStudies": [
+        {
+          "title": "Real Estate CRM Automation",
+          "description": "Automated lead capture and follow-up process",
+          "result": "40% faster sales cycle"
+        },
+        {
+          "title": "Agency Workflow Automation",
+          "description": "Streamlined project management and client communication",
+          "result": "25 hours saved weekly"
+        },
+        {
+          "title": "E-Commerce Order Automation",
+          "description": "Automated fulfillment and customer notification",
+          "result": "Zero manual order entry"
+        }
+      ],
+      "faq": [
+        {
+          "question": "What tools do you use for automation?",
+          "answer": "Zapier, Make (formerly Integromat), Airtable, and custom integrations depending on needs."
+        },
+        {
+          "question": "Is it scalable?",
+          "answer": "Yes, our automation solutions scale with your business."
+        },
+        {
+          "question": "What if we outgrow no-code solutions?",
+          "answer": "We can migrate to custom solutions as your business scales."
+        },
+        {
+          "question": "How long does setup take?",
+          "answer": "Simple workflows can be set up in days. Complex setups may take 2-4 weeks."
+        }
+      ],
+      "image": "/automation.jpg"
+    },
+    {
+      "id": "4",
+      "title": "Performance Marketing & Growth Strategy",
+      "slug": "performance-marketing-growth",
+      "description": "Data-driven campaigns designed to maximize ROI. From paid ads to organic growth, we deliver measurable results.",
+      "number": "04",
+      "subtitle": "Drive Revenue With Data-Driven Marketing",
+      "overview": "We combine paid advertising, conversion optimization, and analytics to create growth machines for your business. Every dollar spent is tracked and optimized for maximum ROI.",
+      "features": [
+        {
+          "title": "Paid Advertising Management",
+          "description": "Google Ads, Facebook Ads, LinkedIn, and programmatic advertising."
+        },
+        {
+          "title": "Conversion Rate Optimization",
+          "description": "A/B testing and optimization to improve your conversion rates."
+        },
+        {
+          "title": "Analytics & Attribution",
+          "description": "Complete tracking and attribution across all channels."
+        },
+        {
+          "title": "SEO & Organic Growth",
+          "description": "Long-term organic growth through SEO and content marketing."
+        },
+        {
+          "title": "Growth Strategy",
+          "description": "Identifying growth opportunities and creating roadmaps."
+        },
+        {
+          "title": "Monthly Optimization",
+          "description": "Continuous testing, analysis, and optimization for results."
+        }
+      ],
+      "benefits": [
+        "Increase qualified leads by 200%+",
+        "Improve cost per acquisition (CPA) by 40%+",
+        "Scale revenue predictably",
+        "Understand which channels drive real customers",
+        "Reduce wasted ad spend",
+        "Build sustainable growth systems"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "Audit & Analysis",
+          "description": "Analyze current marketing, website, and identify opportunities."
+        },
+        {
+          "step": 2,
+          "title": "Strategy Development",
+          "description": "Create growth roadmap with clear targets and tactics."
+        },
+        {
+          "step": 3,
+          "title": "Campaign Launch",
+          "description": "Launch optimized campaigns across selected channels."
+        },
+        {
+          "step": 4,
+          "title": "Testing & Optimization",
+          "description": "Continuous A/B testing and performance optimization."
+        },
+        {
+          "step": 5,
+          "title": "Scaling",
+          "description": "Scale winning campaigns while maintaining or improving ROI."
+        }
+      ],
+      "caseStudies": [
+        {
+          "title": "B2B SaaS Growth",
+          "description": "Implemented paid search and SEO strategy for SaaS startup",
+          "result": "600% ROI in Year 1, $5M ARR"
+        },
+        {
+          "title": "E-Commerce Scaling",
+          "description": "Managed paid ads and optimization for e-commerce business",
+          "result": "$2M revenue from $200K ad spend"
+        },
+        {
+          "title": "Service Business Lead Generation",
+          "description": "Built lead generation system for service provider",
+          "result": "50 qualified leads/month at $150 CPA"
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is a realistic ROI?",
+          "answer": "Typically 300-500% for paid advertising, with some clients seeing 1000%+ ROI."
+        },
+        {
+          "question": "How quickly will we see results?",
+          "answer": "Paid ads can show results in 1-2 weeks. SEO and organic takes 3-6 months."
+        },
+        {
+          "question": "What is your pricing model?",
+          "answer": "We offer performance-based and retainer options. We only win when you win."
+        },
+        {
+          "question": "Do you work with startups?",
+          "answer": "Yes, we work with startups, established businesses, and enterprises."
+        }
+      ],
+      "image": "/performance-marketing.jpg"
+    },
+    {
+      "id": "5",
+      "title": "Social Media & Brand Presence",
+      "slug": "social-media-brand",
+      "description": "Build a compelling brand identity across all platforms. Content strategy, design, and community management.",
+      "number": "05",
+      "subtitle": "Build a Loyal Community and Dominate Your Niche",
+      "overview": "We create and manage social media strategies that turn followers into fans and fans into customers. From content creation to community management, we handle it all so you can focus on your business.",
+      "features": [
+        {
+          "title": "Content Strategy",
+          "description": "Data-driven content calendars tailored to your audience."
+        },
+        {
+          "title": "Community Management",
+          "description": "Professional engagement and relationship building with your followers."
+        },
+        {
+          "title": "Paid Advertising",
+          "description": "Optimized ad campaigns that deliver real ROI on Facebook, Instagram, LinkedIn, and TikTok."
+        },
+        {
+          "title": "Content Creation",
+          "description": "Professional graphics, videos, and copy that resonates with your audience."
+        },
+        {
+          "title": "Analytics & Reporting",
+          "description": "Monthly reports showing growth, engagement, and conversions."
+        },
+        {
+          "title": "Brand Consistency",
+          "description": "Unified voice and visual identity across all platforms."
+        }
+      ],
+      "benefits": [
+        "Increase brand awareness and reach",
+        "Build engaged community of loyal followers",
+        "Generate qualified leads from social platforms",
+        "Improve customer trust and credibility",
+        "Drive traffic to your website",
+        "Cost-effective marketing compared to traditional media"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "Brand Audit",
+          "description": "Analyze your current presence and identify opportunities."
+        },
+        {
+          "step": 2,
+          "title": "Strategy Development",
+          "description": "Create a tailored social strategy for each platform."
+        },
+        {
+          "step": 3,
+          "title": "Content Creation",
+          "description": "Produce high-quality content aligned with your brand."
+        },
+        {
+          "step": 4,
+          "title": "Community Building",
+          "description": "Engage authentically and grow your follower base."
+        },
+        {
+          "step": 5,
+          "title": "Performance Optimization",
+          "description": "Analyze results and refine strategy for continuous improvement."
+        }
+      ],
+      "caseStudies": [
+        {
+          "title": "E-Commerce Brand Growth",
+          "description": "Managed social media for a fashion e-commerce brand",
+          "result": "Grew from 10K to 250K followers in 12 months"
+        },
+        {
+          "title": "SaaS Lead Generation",
+          "description": "Built LinkedIn strategy for B2B SaaS company",
+          "result": "500+ qualified leads generated monthly"
+        },
+        {
+          "title": "Local Service Business",
+          "description": "Managed social presence for a service-based business",
+          "result": "40% of new clients from social media"
+        }
+      ],
+      "faq": [
+        {
+          "question": "How often should we post?",
+          "answer": "It depends on your industry and audience, but typically 3-5 posts per week across platforms works well."
+        },
+        {
+          "question": "Do you create all the content?",
+          "answer": "Yes, we handle content creation, design, copywriting, and posting."
+        },
+        {
+          "question": "How do you measure success?",
+          "answer": "Through engagement rate, follower growth, website traffic, and most importantly, conversions and sales."
+        },
+        {
+          "question": "What if we already have a social presence?",
+          "answer": "We can audit your existing presence and improve it, or take over management completely."
+        }
+      ],
+      "image": "/social-media.jpg"
+    },
+    {
+      "id": "6",
+      "title": "Cinematic Video & Production",
+      "slug": "cinematic-video-production",
+      "description": "Professional video production services. From concept to post-production, we create content that tells your story.",
+      "number": "06",
+      "subtitle": "Tell Your Story With Professional Video",
+      "overview": "Compelling video content that captures attention, tells your story, and drives action. From concept to final edit, we create videos that stand out and convert viewers into customers.",
+      "features": [
+        {
+          "title": "Pre-Production Planning",
+          "description": "Concept development, scriptwriting, and storyboarding."
+        },
+        {
+          "title": "Professional Filming",
+          "description": "4K cinematography with professional equipment and experienced crew."
+        },
+        {
+          "title": "Animation & Motion Graphics",
+          "description": "Eye-catching animations and graphics that explain complex concepts."
+        },
+        {
+          "title": "Color Grading & Editing",
+          "description": "Professional post-production with cinematic color grading."
+        },
+        {
+          "title": "Sound Design",
+          "description": "Original music and professional audio mixing."
+        },
+        {
+          "title": "Multi-Format Delivery",
+          "description": "Optimize for YouTube, social media, websites, and more."
+        }
+      ],
+      "benefits": [
+        "Increase engagement by 300-400% compared to static content",
+        "Improve conversion rates on landing pages",
+        "Boost SEO rankings with video content",
+        "Tell your brand story more effectively",
+        "Build emotional connections with your audience",
+        "Increase time spent on your website"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "Discovery & Concept",
+          "description": "Understand your goals and develop the perfect video concept."
+        },
+        {
+          "step": 2,
+          "title": "Pre-Production",
+          "description": "Script, storyboard, and plan every shot."
+        },
+        {
+          "step": 3,
+          "title": "Production",
+          "description": "Professional filming with 4K cameras and lighting."
+        },
+        {
+          "step": 4,
+          "title": "Post-Production",
+          "description": "Editing, color grading, sound design, and effects."
+        },
+        {
+          "step": 5,
+          "title": "Delivery & Distribution",
+          "description": "Optimize and deliver for all platforms."
+        }
+      ],
+      "caseStudies": [
+        {
+          "title": "Product Launch Video",
+          "description": "Created promotional video for SaaS product launch",
+          "result": "100K+ views and 15% product adoption"
+        },
+        {
+          "title": "Brand Documentary",
+          "description": "Produced a company origin story and culture video",
+          "result": "Used for recruiting and earned media features"
+        },
+        {
+          "title": "Testimonial Video Series",
+          "description": "Created 10 customer testimonial videos",
+          "result": "35% higher conversion rate on sales pages"
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is the typical cost for a video?",
+          "answer": "Videos range from $3K-$50K+ depending on length, location, and complexity. We provide custom quotes."
+        },
+        {
+          "question": "How long does production take?",
+          "answer": "Typically 3-6 weeks from concept to delivery depending on scope."
+        },
+        {
+          "question": "Can you do animation-only videos?",
+          "answer": "Yes, we specialize in explainer videos and motion graphics."
+        },
+        {
+          "question": "Do you provide unlimited revisions?",
+          "answer": "Yes, we include revision rounds in our packages to ensure your satisfaction."
+        }
+      ],
+      "image": "/video-production.jpg"
+    }
+  ]
+}
