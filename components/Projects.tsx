@@ -62,8 +62,8 @@ export default function Projects() {
   };
 
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
-      <div className="mb-12">
+    <section className="relative bg-transparent py-16 lg:py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
         <p className="font-inter text-sm uppercase tracking-[0.2em] text-[#00407a]/60 mb-3">Featured Projects</p>
         <h2 className="font-poppins text-3xl md:text-4xl font-bold text-[#001f3f] mb-4">
           Explore our latest work and success stories
@@ -71,7 +71,7 @@ export default function Projects() {
       </div>
 
       {/* Scrollable Projects Container */}
-      <div className="relative">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
           ref={scrollContainerRef}
           className="flex gap-6 overflow-x-auto scroll-smooth pb-4"

@@ -87,7 +87,8 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
+    <section className="relative bg-transparent py-16 lg:py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="mb-12">
         <p className="font-inter text-sm uppercase tracking-[0.2em] text-[#1ba9e8] mb-4 flex items-center gap-3">
           <span className="text-[#1ba9e8]">READY TO GROW?</span>
@@ -259,6 +260,7 @@ export default function ContactForm() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

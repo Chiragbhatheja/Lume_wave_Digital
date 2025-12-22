@@ -16,11 +16,11 @@ export default function ClientsCarousel() {
   ];
 
   return (
-    <section className="py-16 overflow-hidden bg-gradient-to-b from-white/30 to-[#f5f9fc] border-y border-[#e8f1f7]">
+    <section className="py-12 overflow-hidden bg-transparent">
       <div className="relative">
         {/* Gradient overlays for smooth edges */}
-        <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[#f5f9fc] to-transparent z-10"></div>
-        <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#f5f9fc] to-transparent z-10"></div>
+        <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#f7f9fc]/60 to-transparent z-10"></div>
+        <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#f7f9fc]/60 to-transparent z-10"></div>
         
         {/* Scrolling container */}
         <div className="flex items-center animate-scroll">
@@ -28,13 +28,13 @@ export default function ClientsCarousel() {
           {clients.map((client, index) => (
             <div
               key={`client-1-${index}`}
-              className="flex-shrink-0 mx-12 flex items-center justify-center"
+              className="flex-shrink-0 mx-8 flex items-center justify-center"
             >
               <Image
                 src={client.logo}
                 alt={client.name}
-                width={140}
-                height={80}
+                width={110}
+                height={60}
                 className="object-contain hover:scale-110 transition-transform duration-300"
               />
             </div>
@@ -43,13 +43,13 @@ export default function ClientsCarousel() {
           {clients.map((client, index) => (
             <div
               key={`client-2-${index}`}
-              className="flex-shrink-0 mx-12 flex items-center justify-center"
+              className="flex-shrink-0 mx-8 flex items-center justify-center"
             >
               <Image
                 src={client.logo}
                 alt={client.name}
-                width={140}
-                height={80}
+                width={110}
+                height={60}
                 className="object-contain hover:scale-110 transition-transform duration-300"
               />
             </div>
