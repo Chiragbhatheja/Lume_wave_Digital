@@ -5,7 +5,7 @@ export default function ProblemClarity() {
     {
       title: "The \"Ghost Town\" Website",
       description: "Your website looks fine, but doesn't clearly communicate value",
-      sub: "Visitors come — conversations don't",
+      sub: "Visitors come conversations don't",
     },
     {
       title: "The \"Manual Hustle\" Loop",
@@ -26,10 +26,10 @@ export default function ProblemClarity() {
   };
 
   return (
-    <section className="relative isolate overflow-hidden bg-transparent py-16 lg:py-24">
+    <section className="relative isolate overflow-hidden bg-transparent pt-16 lg:pt-24 pb-8 lg:pb-10">
       {/* Distinct soft tint (cool → warm) for this section */}
       <div
-        className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(210,236,248,0.75)_0%,rgba(242,247,253,0.82)_40%,rgba(255,244,231,0.78)_100%)]"
+        className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(206,233,246,0.92)_0%,rgba(242,247,253,0.9)_40%,rgba(255,207,153,0.88)_100%)]"
         aria-hidden
       />
 
@@ -47,7 +47,7 @@ export default function ProblemClarity() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-12 space-y-2">
           <h2 className="font-poppins text-3xl md:text-4xl font-bold text-[#0f1024]">
-            If growth feels stuck, it's usually because of one of these.
+            If growth feels stuck, it&apos;s usually because of one of these.
           </h2>
         </div>
 

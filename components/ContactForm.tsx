@@ -16,12 +16,9 @@ export default function ContactForm() {
   const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
 
   const services = [
-    'Website Design & Development',
-    'SaaS & App Development',
-    'Automation Systems & No-Code Pipelines',
-    'Social Media & Brand Presence',
-    'Cinematic Video & Production',
-    'Performance Marketing & Growth Strategy',
+    'Growth System Foundation',
+    'Inbound Engine',
+    'Business OS',
     'Free Website Audit',
   ];
 
@@ -87,7 +84,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="relative bg-transparent py-16 lg:py-20">
+    <section className="relative bg-transparent pt-8 lg:pt-10 pb-16 lg:pb-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="mb-12">
         <p className="font-inter text-sm uppercase tracking-[0.2em] text-[#1ba9e8] mb-4 flex items-center gap-3">
@@ -227,8 +224,8 @@ export default function ContactForm() {
               </div>
               <div>
                 <p className="font-poppins text-sm uppercase tracking-[0.1em] text-[#00407a]/60 mb-1">Phone</p>
-                <a href="tel:+1234567890" className="font-poppins text-lg font-semibold text-[#001f3f] hover:text-[#1ba9e8] transition-colors">
-                  +1 (234) 567-890
+                <a href="tel:+919217727015" className="font-poppins text-lg font-semibold text-[#001f3f] hover:text-[#1ba9e8] transition-colors">
+                   +91 9217727015
                 </a>
               </div>
             </div>
@@ -242,8 +239,8 @@ export default function ContactForm() {
               </div>
               <div>
                 <p className="font-poppins text-sm uppercase tracking-[0.1em] text-[#00407a]/60 mb-1">Email</p>
-                <a href="mailto:hello@lumewave.com" className="font-poppins text-lg font-semibold text-[#001f3f] hover:text-[#1ba9e8] transition-colors">
-                  hello@lumewave.com
+                <a href="mailto:info@lumewavedigital.com" className="font-poppins text-lg font-semibold text-[#001f3f] hover:text-[#1ba9e8] transition-colors">
+                  info@lumewavedigital.com
                 </a>
               </div>
             </div>

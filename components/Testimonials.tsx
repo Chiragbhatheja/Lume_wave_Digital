@@ -4,18 +4,18 @@ import { useEffect, useState } from 'react';
 
 export default function Testimonials() {
   const [counts, setCounts] = useState({
-    websites: 0,
-    satisfaction: 0,
     projects: 0,
-    views: 0,
+    systems: 0,
+    businesses: 0,
+    approach: 0,
   });
 
   useEffect(() => {
     const targets = {
-      websites: 10,
-      satisfaction: 99,
-      projects: 50,
-      views: 10,
+      projects: 15,
+      systems: 8,
+      businesses: 10,
+      approach: 1,
     };
 
     const duration = 2000; // 2 seconds
@@ -26,10 +26,10 @@ export default function Testimonials() {
       const progress = Math.min((now - startTime) / duration, 1);
 
       setCounts({
-        websites: Math.floor(targets.websites * progress),
-        satisfaction: Math.floor(targets.satisfaction * progress),
         projects: Math.floor(targets.projects * progress),
-        views: Math.floor(targets.views * progress),
+        systems: Math.floor(targets.systems * progress),
+        businesses: Math.floor(targets.businesses * progress),
+        approach: Math.floor(targets.approach * progress),
       });
 
       if (progress < 1) {
@@ -41,47 +41,21 @@ export default function Testimonials() {
   }, []);
 
   return (
-    <section className="relative bg-transparent py-16 lg:py-20">
+    <section className="relative bg-transparent pt-8 lg:pt-10 pb-8 lg:pb-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12 space-y-4">
-          <p className="font-inter text-sm uppercase tracking-[0.2em] text-[#00407a]/60">TESTIMONIALS</p>
+          <p className="font-inter text-sm uppercase tracking-[0.2em] text-[#00407a]/60">BY THE NUMBERS</p>
           <h2 className="font-poppins text-3xl md:text-4xl font-bold text-[#001f3f]">
-            Hear from the <span className="relative inline-block">
-              creators
-              <span className="absolute bottom-2 left-0 right-0 h-3 bg-[#FF6B6B]/30"></span>
-            </span>
+            What working with us actually feels like.
           </h2>
           <p className="font-inter text-base md:text-lg text-[#003366] max-w-2xl leading-relaxed">
-                Creators worldwide trust us across all kinds of content — reaction videos, vlogs, shorts/reels, talking head, podcasts, and more.
+              Founder-led businesses across different stages rely on us to build systems that work—websites, inbound engines, and internal tools.
           </p>
-              <p className="font-inter text-base text-[#003366]">We focus on measurable outcomes.</p>
         </div>
 
         {/* Stats Grid */}
         <div className="grid md:grid-cols-4 gap-8 lg:gap-12">
-          {/* Websites Delivered */}
-          <div className="text-center">
-            <div className="flex items-baseline justify-center gap-1 mb-2">
-              <span className="font-poppins text-5xl md:text-6xl font-bold text-[#001f3f]">
-                {counts.websites}
-              </span>
-              <span className="font-poppins text-3xl md:text-4xl font-bold text-[#1ba9e8]">+</span>
-            </div>
-            <p className="font-inter text-base md:text-lg text-[#003366]">Websites Delivered</p>
-          </div>
-
-          {/* Client Satisfaction */}
-          <div className="text-center">
-            <div className="flex items-baseline justify-center gap-1 mb-2">
-              <span className="font-poppins text-5xl md:text-6xl font-bold text-[#001f3f]">
-                {counts.satisfaction}
-              </span>
-              <span className="font-poppins text-3xl md:text-4xl font-bold text-[#FF4B4B]">%</span>
-            </div>
-            <p className="font-inter text-base md:text-lg text-[#003366]">Client Satisfaction</p>
-          </div>
-
-          {/* Projects Completed */}
+          {/* Projects Delivered */}
           <div className="text-center">
             <div className="flex items-baseline justify-center gap-1 mb-2">
               <span className="font-poppins text-5xl md:text-6xl font-bold text-[#001f3f]">
@@ -89,18 +63,43 @@ export default function Testimonials() {
               </span>
               <span className="font-poppins text-3xl md:text-4xl font-bold text-[#1ba9e8]">+</span>
             </div>
-            <p className="font-inter text-base md:text-lg text-[#003366]">Projects Completed</p>
+            <p className="font-inter text-base md:text-lg font-semibold text-[#001f3f]">Projects Delivered</p>
+            <p className="font-inter text-sm text-[#003366]/80 mt-1">Across web, inbound, and systems</p>
           </div>
 
-          {/* Views Gained */}
+          {/* Systems Built */}
           <div className="text-center">
             <div className="flex items-baseline justify-center gap-1 mb-2">
               <span className="font-poppins text-5xl md:text-6xl font-bold text-[#001f3f]">
-                {counts.views}
+                {counts.systems}
               </span>
-              <span className="font-poppins text-3xl md:text-4xl font-bold text-[#00407a]">k+</span>
+              <span className="font-poppins text-3xl md:text-4xl font-bold text-[#1ba9e8]">+</span>
             </div>
-            <p className="font-inter text-base md:text-lg text-[#003366]">Views Gained</p>
+            <p className="font-inter text-base md:text-lg font-semibold text-[#001f3f]">Systems Built</p>
+            <p className="font-inter text-sm text-[#003366]/80 mt-1">Websites, workflows, internal tools</p>
+          </div>
+
+          {/* Founder-Led Businesses */}
+          <div className="text-center">
+            <div className="flex items-baseline justify-center gap-1 mb-2">
+              <span className="font-poppins text-5xl md:text-6xl font-bold text-[#001f3f]">
+                {counts.businesses}
+              </span>
+              <span className="font-poppins text-3xl md:text-4xl font-bold text-[#1ba9e8]">+</span>
+            </div>
+            <p className="font-inter text-base md:text-lg font-semibold text-[#001f3f]">Founder-Led Businesses</p>
+            <p className="font-inter text-sm text-[#003366]/80 mt-1">Supported across different stages</p>
+          </div>
+
+          {/* One Approach */}
+          <div className="text-center">
+            <div className="flex items-baseline justify-center gap-1 mb-2">
+              <span className="font-poppins text-5xl md:text-6xl font-bold text-[#001f3f]">
+                {counts.approach}
+              </span>
+            </div>
+            <p className="font-inter text-base md:text-lg font-semibold text-[#001f3f]">Approach</p>
+            <p className="font-inter text-sm text-[#003366]/80 mt-1">One system, three phases</p>
           </div>
         </div>
       </div>

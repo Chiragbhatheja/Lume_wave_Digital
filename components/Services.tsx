@@ -1,7 +1,7 @@
 "use client";
 
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import content from '@/data/content.json';
 
 interface Service {
   id: string;
@@ -14,32 +14,10 @@ interface Service {
 }
 
 export default function Services() {
-  const [services, setServices] = useState<Service[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    fetch('/api/services')
-      .then(res => res.json())
-      .then(data => setServices(data))
-      .catch(err => {
-        console.error('Failed to fetch services:', err);
-        setServices([]);
-      })
-      .finally(() => setIsLoading(false));
-  }, []);
-
-  if (isLoading) {
-    return (
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
-        <div className="text-center">
-          <p className="text-gray-500">Loading services...</p>
-        </div>
-      </section>
-    );
-  }
+  const services = content.services as Service[];
 
   return (
-    <section id="services" className="relative isolate overflow-hidden text-[#0f1024] py-16 lg:py-24">
+    <section id="services" className="relative isolate overflow-hidden text-[#0f1024] pt-8 lg:pt-10 pb-8 lg:pb-10">
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(27,169,232,0.045),transparent_40%),radial-gradient(circle_at_80%_18%,rgba(255,107,107,0.045),transparent_42%),radial-gradient(circle_at_50%_80%,rgba(16,185,129,0.04),transparent_38%)]" />
         {/* Section edge fades for seamless flow */}

@@ -1,55 +1,58 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const footerLinks = {
     Company: [
-      { name: 'Home', href: '#home' },
-      { name: 'About Us', href: '#about' },
-      { name: 'Services', href: '#services' },
-      { name: 'Projects', href: '#projects' },
+      { name: 'Home', href: '/#home' },
+      { name: 'About Us', href: '/about' },
+      { name: 'Services', href: '/#services' },
+      { name: 'Projects', href: '/#projects' },
     ],
     Resources: [
-      { name: 'Blogs', href: '#blogs' },
-      { name: 'Case Studies', href: '#projects' },
-      { name: 'Contact', href: '#contact' },
+      
+      { name: 'Case Studies', href: '/#projects' },
+      { name: 'Contact', href: '/#contact' },
       { name: 'Privacy Policy', href: '/privacy' },
     ],
     Services: [
-      { name: 'Web Development', href: '#services' },
-      { name: 'SaaS Solutions', href: '#services' },
-      { name: 'Digital Marketing', href: '#services' },
-      { name: 'Brand Strategy', href: '#services' },
+      { name: 'Growth System Foundation', href: '/#services' },
+      { name: 'Inbound Engine', href: '/#services' },
+      { name: 'Business OS', href: '/#services' },
+      
     ],
     Contact: [
-      { label: 'Phone', value: '+91-7508590063', href: 'tel:+917508590063' },
-      { label: 'Email', value: 'hello@lumewave.com', href: 'mailto:hello@lumewave.com' },
+      { label: 'Phone', value: ' +91 9217727015', href: 'tel:+919217727015' },
+      { label: 'Email', value: 'info@lumewavedigital.com', href: 'mailto:info@lumewavedigital.com' },
       { label: 'Location', value: 'Remote Studio', href: '#' },
     ],
   };
 
   const socialLinks = [
-    { name: 'Twitter', icon: 'twitter', url: '#' },
-    { name: 'LinkedIn', icon: 'linkedin', url: '#' },
-    { name: 'Instagram', icon: 'instagram', url: '#' },
-    { name: 'Facebook', icon: 'facebook', url: '#' },
+    { name: 'LinkedIn', icon: 'linkedin', url: 'https://www.linkedin.com/company/lumewavedigital/' },
+    { name: 'Instagram', icon: 'instagram', url: 'https://www.instagram.com/lumewavedigital?igsh=cm9icTFoNHFjZDZw' },
   ];
 
   return (
     <footer className="bg-gradient-to-b from-[#f5f9fc] to-white border-t border-[#e8f1f7]">
       {/* Main Footer Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 mb-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-14">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-10 mb-8">
           {/* Brand Section */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center space-x-2.5 mb-6">
-              <div className="w-10 h-10 bg-gradient-to-br from-[#FF4B4B] to-[#f33a3a] rounded-lg flex items-center justify-center shadow-sm">
-                <span className="text-white font-bold text-sm">LW</span>
-              </div>
-              <span className="text-[#001f3f] font-bold text-base tracking-tight">LumeWave</span>
+            <Link href="/" className="flex items-center mb-6">
+              <Image
+                src="/logo.png"
+                alt="LumeWave"
+                width={240}
+                height={84}
+                className="h-16 w-auto object-contain"
+                priority
+              />
             </Link>
             <p className="font-inter text-sm text-[#00407a] leading-relaxed mb-6">
               Transforming brands through integrated digital innovation and cinematic storytelling.
@@ -170,7 +173,7 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-[#e8f1f7] my-8"></div>
+        <div className="border-t border-[#e8f1f7] my-6"></div>
 
         {/* Bottom Footer */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">

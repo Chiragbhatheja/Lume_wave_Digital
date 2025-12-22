@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function WhoWeAreFor() {
   return (
-    <section className="relative isolate overflow-hidden bg-transparent text-[#0f1024] py-16 lg:py-24">
+    <section className="relative isolate overflow-hidden bg-transparent text-[#0f1024] pt-8 lg:pt-10 pb-8 lg:pb-10">
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -top-32 left-10 h-64 w-64 rounded-full bg-emerald-400/6 blur-3xl" />
         <div className="absolute -bottom-20 right-0 h-72 w-72 rounded-full bg-rose-400/6 blur-3xl" />
@@ -77,7 +77,7 @@ export default function WhoWeAreFor() {
                   href="#contact"
                   className="inline-flex items-center justify-center gap-2 w-full px-6 py-3.5 bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-semibold rounded-full hover:shadow-lg hover:shadow-emerald-500/40 transition-all duration-300 hover:scale-[1.02]"
                 >
-                  I'm a Fit—Let's Talk
+                  I&apos;m a Fit Let&apos;s Talk
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>

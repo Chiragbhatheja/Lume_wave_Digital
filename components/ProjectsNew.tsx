@@ -1,7 +1,7 @@
 'use client';
 
-import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import content from '@/data/content.json';
 
 interface Project {
   id: string;
@@ -13,14 +13,7 @@ interface Project {
 }
 
 export default function Projects() {
-  const [projects, setProjects] = useState<Project[]>([]);
-
-  useEffect(() => {
-    fetch('/api/projects')
-      .then(res => res.json())
-      .then(data => setProjects(data))
-      .catch(err => console.error('Failed to fetch projects:', err));
-  }, []);
+  const projects = content.projects as Project[];
 
   const scroll = (direction: 'left' | 'right') => {
     const container = document.getElementById('projects-scroll');

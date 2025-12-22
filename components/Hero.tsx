@@ -12,7 +12,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-32 mt-20 sm:mt-0">
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 sm:pt-16 lg:pt-32 pb-8 sm:pb-10 lg:pb-12 mt-20 sm:mt-0">
       <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
         <div
           className={`space-y-4 sm:space-y-6 transform transition-all duration-1000 ${
@@ -68,7 +68,7 @@ export default function Hero() {
           </div>
           
           {/* Image - no shadow, blends naturally */}
-          <div className="relative w-full aspect-[4/3] lg:scale-110 z-10">
+          <div className="relative w-full aspect-[4/3] scale-105 sm:scale-110 lg:scale-125 z-10">
             <Image 
               src="/hero-image.png" 
               alt="LumeWave Digital - Transform Your Story" 

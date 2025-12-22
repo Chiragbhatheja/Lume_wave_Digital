@@ -2,86 +2,30 @@
   "projects": [
     {
       "id": "1",
-      "name": "E-Commerce Platform",
-      "category": "SaaS Development",
-      "description": "Built a fully integrated online marketplace with inventory management, payment processing, and real-time analytics.",
+      "name": "Founder-Led Business Website",
+      "category": "Clarity & Conversion",
+      "description": "Positioning-first website for a founder-led service business that turned inconsistent inquiries into confident inbound conversations.",
       "image": "/project1.jpg",
       "gradient": "from-[#FF6B6B]/20 to-[#FF8E8E]/10",
-      "fullContent": "<h2>E-Commerce Platform</h2>\n<p>A comprehensive online marketplace solution with advanced features.</p>\n<h3>Key Features</h3>\n<ul><li>Inventory Management System</li><li>Payment Gateway Integration</li><li>Real-time Analytics Dashboard</li><li>Customer Relationship Management</li></ul>\n<h3>Results</h3>\n<p>Increased sales by 300% in the first quarter. Improved customer satisfaction scores significantly.</p>"
+      "fullContent": "<h2>Founder-Led Business Website</h2>\n<p><strong>Context:</strong> Founder-led service business in early growth stage with a functioning site and steady referrals, but inconsistent online inquiries.</p>\n<p><strong>The problem:</strong> The site looked fine, but it didn’t clearly explain what made the business different or guide visitors toward a conversation.</p>\n<p><strong>Our diagnosis:</strong> This wasn’t a traffic issue — it was a clarity and conversion problem.</p>\n<p><strong>What we focused on:</strong> Refining positioning, simplifying the message, and restructuring the website flow.</p>\n<p><strong>What we built:</strong> A clearer homepage narrative, focused service sections, and intentional call-to-actions.</p>\n<p><strong>Systems added:</strong> Lead capture and follow-up structured to reduce manual back-and-forth.</p>\n<p><strong>Outcome:</strong> The website became a tool for explanation and trust, not just presence. Inbound conversations now start with clearer context and better-fit leads.</p>\n<p><em>Note: Full walkthrough shared privately during a Growth System Audit.</em></p>"
     },
     {
       "id": "2",
-      "name": "SaaS Dashboard",
-      "category": "Web Development",
-      "description": "Designed and developed a modern B2B SaaS platform with custom dashboards, role-based access control, and API integrations.",
+      "name": "Social Media + Campaign System",
+      "category": "Inbound Systems",
+      "description": "Consistency and campaign structure that turned scattered posting into a clear path from content to inquiry for a referral-reliant business.",
       "image": "/project2.jpg",
       "gradient": "from-[#4ECDC4]/20 to-[#6DD5CD]/10",
-      "fullContent": "<h2>B2B SaaS Dashboard</h2>\n<p>Modern platform with enterprise-grade features.</p>\n<h3>Features</h3>\n<ul><li>Custom Dashboards</li><li>Role-Based Access Control</li><li>Third-party API Integrations</li></ul>"
+      "fullContent": "<h2>Social Media + Campaign System</h2>\n<p><strong>Context:</strong> Small business relying heavily on referrals and manual outreach with inconsistent, disconnected social activity.</p>\n<p><strong>The problem:</strong> Effort was high, but visibility didn’t translate into predictable inquiries.</p>\n<p><strong>Our diagnosis:</strong> No inbound structure — only isolated posting and campaigns.</p>\n<p><strong>What we focused on:</strong> Creating consistency, clarity of message, and a clear path from content to inquiry.</p>\n<p><strong>What we built:</strong> A content structure aligned with business goals and targeted campaigns to support it.</p>\n<p><strong>Systems added:</strong> Tracking and basic automation to handle responses and follow-ups.</p>\n<p><strong>Outcome:</strong> Visibility became intentional, and lead flow stopped depending entirely on manual effort.</p>\n<p><em>Note: Details shared privately during a Growth System Audit.</em></p>"
     },
     {
       "id": "3",
-      "name": "Brand Campaign",
-      "category": "Marketing",
-      "description": "Executed a multi-channel marketing campaign including social media strategy, content creation, and performance optimization.",
+      "name": "Internal Billing & Operations System",
+      "category": "Automation & Ops",
+      "description": "Lightweight internal OS to end manual invoicing, tracking, and ops backlogs for a founder-run team.",
       "image": "/project3.jpg",
       "gradient": "from-[#FFD93D]/20 to-[#FFE566]/10",
-      "fullContent": "<h2>Brand Campaign</h2>\n<p>Multi-channel marketing campaign that drove significant brand awareness.</p>\n<h3>Campaign Highlights</h3>\n<ul><li>Social Media Strategy</li><li>Content Creation</li><li>Performance Optimization</li></ul>"
-    },
-    {
-      "id": "4",
-      "name": "Mobile App Launch",
-      "category": "App Development",
-      "description": "Successfully launched a cross-platform mobile application with 50,000+ downloads in the first month and 4.8★ rating.",
-      "image": "/project4.jpg",
-      "gradient": "from-[#A8E6CF]/20 to-[#B9EADB]/10",
-      "fullContent": "<h2>Mobile App Launch</h2>\n<p>Cross-platform mobile application with exceptional user ratings.</p>\n<h3>Achievements</h3>\n<ul><li>50,000+ downloads in first month</li><li>4.8★ average rating</li><li>Featured on App Store</li></ul>"
-    }
-  ],
-  "blogs": [
-    {
-      "title": "The Future of Web Development in 2024",
-      "excerpt": "Exploring emerging trends and technologies shaping the next generation of web applications.",
-      "category": "Technology",
-      "date": "Dec 1, 2024",
-      "image": "/blog1.jpg",
-      "content": "<h2>The Future of Web Development: Trends and Technologies</h2>\n<p>Web development is rapidly evolving with new technologies and frameworks emerging constantly. In this article, we explore the key trends that are shaping the future of web development.</p>\n<h3>1. AI and Machine Learning Integration</h3>\n<p>Artificial intelligence is becoming increasingly integrated into web applications, enabling personalized user experiences and intelligent automation. From chatbots to predictive analytics, AI is transforming how we build and interact with web applications.</p>\n<h3>2. Progressive Web Applications (PWA)</h3>\n<p>PWAs continue to gain traction as they offer app-like experiences through web browsers. With features like offline functionality, push notifications, and fast loading times, PWAs are bridging the gap between web and native applications.</p>\n<h3>3. Edge Computing</h3>\n<p>Edge computing brings computation closer to the data source, reducing latency and improving performance. This technology is particularly beneficial for real-time applications and content delivery.</p>\n<h3>4. WebAssembly (WASM)</h3>\n<p>WebAssembly enables high-performance computing in the browser, allowing developers to build complex applications with near-native performance. This opens up new possibilities for web-based applications.</p>\n<h3>5. Serverless Architecture</h3>\n<p>Serverless computing continues to revolutionize backend development, allowing developers to focus on code without managing infrastructure. This approach reduces costs and improves scalability.</p>\n<p>The future of web development is exciting, with emerging technologies offering new possibilities for creating fast, scalable, and user-friendly applications.</p>",
-      "id": "future-of-web-development"
-    },
-    {
-      "id": "saas-growth-strategies",
-      "title": "SaaS Growth Strategies That Actually Work",
-      "excerpt": "Proven tactics to scale your SaaS business and increase customer lifetime value.",
-      "category": "Business",
-      "date": "Nov 28, 2024",
-      "image": "/blog2.jpg",
-      "content": "<h2>SaaS Growth Strategies That Actually Work</h2>\n<p>Growing a SaaS business requires a strategic approach. Here are proven tactics that work.</p>\n<h3>1. Product-Led Growth</h3>\n<p>Let your product sell itself through free trials and freemium models.</p>\n<h3>2. Customer Success</h3>\n<p>Focus on customer retention and reducing churn through proactive support.</p>\n<h3>3. Content Marketing</h3>\n<p>Build authority through valuable content that attracts and educates your audience.</p>"
-    },
-    {
-      "id": "ui-ux-best-practices",
-      "title": "UI/UX Best Practices for 2024",
-      "excerpt": "Design principles and patterns that create exceptional user experiences.",
-      "category": "Design",
-      "date": "Nov 25, 2024",
-      "image": "/blog3.jpg",
-      "content": "<h2>UI/UX Best Practices for 2024</h2>\n<p>Creating exceptional user experiences requires attention to detail and user-centric design.</p>\n<h3>1. Accessibility First</h3>\n<p>Design for all users including those with disabilities.</p>\n<h3>2. Mobile-First Design</h3>\n<p>Start with mobile layouts and scale up to desktop.</p>"
-    },
-    {
-      "id": "mobile-first-development",
-      "title": "Why Mobile-First Development Matters",
-      "excerpt": "Understanding the importance of mobile-first approach in modern web development.",
-      "category": "Development",
-      "date": "Nov 20, 2024",
-      "image": "/blog4.jpg",
-      "content": "<h2>Why Mobile-First Development Matters</h2>\n<p>Mobile traffic now exceeds desktop, making mobile-first development essential for success.</p>\n<h3>Benefits of Mobile-First</h3>\n<p>Improved performance, better user experience, and higher conversion rates.</p>"
-    },
-    {
-      "id": "digital-marketing-trends",
-      "title": "Digital Marketing Trends to Watch",
-      "excerpt": "Key marketing trends and strategies for staying ahead in the digital landscape.",
-      "category": "Marketing",
-      "date": "Nov 15, 2024",
-      "image": "/blog5.jpg",
-      "content": "<h2>Digital Marketing Trends to Watch</h2>\n<p>Stay ahead of the curve with these emerging marketing trends.</p>\n<h3>1. AI-Powered Marketing</h3>\n<p>Leverage AI for personalization and automation.</p>\n<h3>2. Video Content</h3>\n<p>Video continues to dominate social media and content marketing.</p>"
+      "fullContent": "<h2>Internal Billing & Operations System</h2>\n<p><strong>Context:</strong> Founder-run business managing invoices, tracking, and records manually, leading to delays and errors.</p>\n<p><strong>The problem:</strong> Operational work was consuming time meant for growth — the founder <em>was</em> the system.</p>\n<p><strong>Our diagnosis:</strong> Lack of a simple internal system and a single source of truth.</p>\n<p><strong>What we focused on:</strong> Reducing manual steps and creating one source of truth.</p>\n<p><strong>What we built:</strong> A custom billing and tracking tool tailored to the workflow.</p>\n<p><strong>Outcome:</strong> Operations became faster, clearer, and less dependent on memory.</p>\n<p><em>Note: Internal systems are demonstrated privately.</em></p>"
     }
   ],
   "services": [

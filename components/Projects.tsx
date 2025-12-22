@@ -9,28 +9,22 @@ export default function Projects() {
 
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      desc: 'Complete digital transformation for retail brand',
+      title: 'Founder-Led Business Website',
+      desc: 'Clarity-first site for a founder-led service business to convert steady referrals into consistent inbound.',
       color: 'from-[#0099FF] to-[#0066CC]',
-      slug: 'ecommerce-platform'
+      slug: 'founder-led-business-website'
     },
     {
-      title: 'SaaS Dashboard',
-      desc: 'Analytics platform for enterprise clients',
-      color: 'from-[#0066CC] to-[#003399]',
-      slug: 'saas-dashboard'
-    },
-    {
-      title: 'Brand Campaign',
-      desc: 'Multi-channel marketing strategy and execution',
+      title: 'Social Media + Campaign System',
+      desc: 'Consistency framework turning scattered posting into a predictable path from content to inquiry.',
       color: 'from-[#FF6B6B] to-[#FF4B4B]',
-      slug: 'brand-campaign'
+      slug: 'social-media-campaign-system'
     },
     {
-      title: 'Mobile App Launch',
-      desc: 'Fintech application with real-time features',
+      title: 'Internal Billing & Operations System',
+      desc: 'Lightweight internal tool to stop manual invoicing, tracking, and ops backlogs for a founder-run team.',
       color: 'from-[#00D4FF] to-[#0099FF]',
-      slug: 'mobile-app-launch'
+      slug: 'internal-billing-ops'
     },
   ];
 
@@ -62,7 +56,7 @@ export default function Projects() {
   };
 
   return (
-    <section className="relative bg-transparent py-16 lg:py-20">
+    <section className="relative bg-transparent pt-8 lg:pt-10 pb-8 lg:pb-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
         <p className="font-inter text-sm uppercase tracking-[0.2em] text-[#00407a]/60 mb-3">Featured Projects</p>
         <h2 className="font-poppins text-3xl md:text-4xl font-bold text-[#001f3f] mb-4">
@@ -80,8 +74,8 @@ export default function Projects() {
           {projects.map((project, idx) => (
             <div
               key={idx}
-              className="relative flex-shrink-0 w-96 h-64 rounded-2xl overflow-hidden group cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
-              onClick={() => window.location.href = `/projects/${project.slug}`}
+              className="relative flex-shrink-0 w-96 h-64 rounded-2xl overflow-hidden group transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
+              onClick={() => project.slug && (window.location.href = `/projects/${project.slug}`)}
             >
               {/* Gradient Background */}
               <div className={`absolute inset-0 bg-gradient-to-br ${project.color}`} />
