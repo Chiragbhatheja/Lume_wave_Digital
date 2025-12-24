@@ -31,7 +31,7 @@ const slugify = (text: string) =>
 async function getServices(): Promise<ServiceDetail[]> {
   const base =
     process.env.NEXT_PUBLIC_BASE_URL ||
-    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000');
+    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : '');
 
   const res = await fetch(`${base}/api/services`, {
     cache: 'no-store',

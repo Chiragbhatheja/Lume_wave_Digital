@@ -27,7 +27,7 @@ export default function Hero() {
           </h1>
           
           <p className="font-inter text-base sm:text-lg md:text-xl text-[#00407a] leading-relaxed">
-            Integrated digital innovation from SaaS development to cinematic stories.
+            Turn your business into a predictable growth engine . 
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2 sm:pt-4">
@@ -73,6 +73,7 @@ export default function Hero() {
               src="/hero-image.png" 
               alt="LumeWave Digital - Transform Your Story" 
               fill 
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 100vw"
               className="object-contain"
               priority
             />

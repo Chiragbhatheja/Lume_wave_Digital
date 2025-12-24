@@ -6,6 +6,9 @@ import WhoWeAreFor from '@/components/WhoWeAreFor';
 import Testimonials from '@/components/Testimonials';
 import Projects from '@/components/Projects';
 import ContactForm from '@/components/ContactForm';
+import { generateMetadata as genMeta } from '@/lib/seo';
+
+export const metadata = genMeta('home');
 
 export default function Home() {
   return (

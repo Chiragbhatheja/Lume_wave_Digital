@@ -102,10 +102,10 @@ That’s how we approach growth — with structure, intention, and long-term thi
           <div className="space-y-4">
             <h2 className="font-poppins text-2xl md:text-3xl font-semibold text-[#001f3f]">I’m Chirag, founder of LumeWave Digital.</h2>
             <p className="font-inter text-base md:text-lg text-[#003366] leading-relaxed">
-              I work with founders, professionals, and growing businesses who feel stuck — not because they lack effort, but because they lack clarity and systems.
+              I work with founders, professionals, and growing businesses who feel stuck not because they lack effort, but because they lack clarity and systems.
             </p>
             <p className="font-inter text-base md:text-lg text-[#003366] leading-relaxed">
-              LumeWave was built around a simple belief: growth should be structured, predictable, and calm — not chaotic or manual.
+              LumeWave was built around a simple belief: growth should be structured, predictable, and calm not chaotic or manual.
             </p>
             <p className="font-inter text-base md:text-lg text-[#003366] leading-relaxed">
               Instead of chasing trends or selling disconnected services, I focus on building clear positioning, inbound systems, and automation that let businesses grow without everything depending on the founder.
@@ -135,6 +135,7 @@ That’s how we approach growth — with structure, intention, and long-term thi
                   src="/founder.jpeg"
                   alt="Chirag, Founder of LumeWave Digital"
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 100vw"
                   className="object-cover object-center"
                   priority
                 />

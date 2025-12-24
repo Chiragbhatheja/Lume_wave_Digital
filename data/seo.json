@@ -1,0 +1,62 @@
+{
+  "home": {
+    "title": "LumeWave Digital - Digital Innovation Agency",
+    "description": "Turn your business into a predictable growth engine.  digital innovation  from SaaS development to cinematic stories.",
+    "keywords": "digital innovation, SaaS development, brand transformation, digital marketing, business growth",
+    "ogImage": "/og-home.jpg"
+  },
+  "about": {
+    "title": "About Us - LumeWave Digital",
+    "description": "Learn about LumeWave Digital and our mission to transform businesses through digital innovation and strategic growth systems.",
+    "keywords": "about lumewave, digital agency, innovation team",
+    "ogImage": "/og-about.jpg"
+  },
+  "contact": {
+    "title": "Contact Us - LumeWave Digital",
+    "description": "Get in touch with LumeWave Digital. Let's discuss how we can transform your business and drive predictable growth.",
+    "keywords": "contact, get in touch, digital consultation",
+    "ogImage": "/og-contact.jpg"
+  },
+  "services": {
+    "title": "Our Services - LumeWave Digital",
+    "description": "Explore our comprehensive digital services including Business OS, Growth System Foundation, and Inbound Engine.",
+    "keywords": "digital services, business automation, growth systems, inbound marketing",
+    "ogImage": "/og-services.jpg"
+  },
+  "services/business-os": {
+    "title": "Business OS - Automation & Operational Clarity",
+    "description": "Transform your business operations with our Business OS. Automate workflows and gain operational clarity.",
+    "keywords": "business automation, operational systems, workflow automation",
+    "ogImage": "/Business_os.png"
+  },
+  "services/growth-system-foundation": {
+    "title": "Growth System Foundation - Strategic Growth",
+    "description": "Build a solid foundation for sustainable business growth with our proven systems and strategies.",
+    "keywords": "growth strategy, business foundation, sustainable growth",
+    "ogImage": "/og-growth.jpg"
+  },
+  "services/inbound-engine": {
+    "title": "Inbound Engine - Marketing That Attracts",
+    "description": "Drive qualified leads with our comprehensive inbound marketing engine and conversion strategies.",
+    "keywords": "inbound marketing, lead generation, marketing automation",
+    "ogImage": "/og-inbound.jpg"
+  },
+  "projects": {
+    "title": "Our Projects - LumeWave Digital Portfolio",
+    "description": "Explore our portfolio of successful digital transformation projects and client success stories.",
+    "keywords": "portfolio, case studies, digital projects, client success",
+    "ogImage": "/og-projects.jpg"
+  },
+  "privacy": {
+    "title": "Privacy Policy - LumeWave Digital",
+    "description": "Read our privacy policy to understand how we collect, use, and protect your personal information.",
+    "keywords": "privacy policy, data protection, privacy",
+    "ogImage": "/favicon.png"
+  },
+  "terms": {
+    "title": "Terms of Service - LumeWave Digital",
+    "description": "Review our terms of service for using LumeWave Digital's website and services.",
+    "keywords": "terms of service, legal, terms and conditions",
+    "ogImage": "/favicon.png"
+  }
+}

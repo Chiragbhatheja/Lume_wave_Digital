@@ -32,7 +32,7 @@ export default function Services() {
             Three offers, one growth engine
           </h2>
           <p className="text-slate-600 max-w-2xl text-sm md:text-base">
-            Pick the layer you need—foundation, predictable inbound, or an automated business OS. The middle card is your highest ROI path.
+            Pick the layer you need foundation, predictable inbound, or an automated business OS. The middle card is your highest ROI path.
           </p>
         </div>
 

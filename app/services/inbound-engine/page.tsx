@@ -1,5 +1,8 @@
 import Image from 'next/image';
 import ContactForm from '@/components/ContactForm';
+import { generateMetadata as genMeta } from '@/lib/seo';
+
+export const metadata = genMeta('services/inbound-engine');
 
 interface PillarProps {
   step: string;
