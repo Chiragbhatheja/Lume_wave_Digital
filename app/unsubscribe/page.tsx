@@ -1,9 +1,10 @@
 "use client";
 
+import { Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 
-export default function UnsubscribePage() {
+function UnsubscribeContent() {
   const params = useSearchParams();
   const status = params.get('status');
 
@@ -31,5 +32,24 @@ export default function UnsubscribePage() {
         </div>
       </div>
     </main>
+  );
+}
+
+export default function UnsubscribePage() {
+  return (
+    <Suspense fallback={
+      <main className="min-h-screen bg-gradient-to-b from-[#f5f9fc] to-white">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <div className="bg-white border border-[#e8f1f7] rounded-2xl p-8 text-center">
+            <div className="animate-pulse">
+              <div className="h-8 bg-gray-200 rounded w-3/4 mx-auto mb-4"></div>
+              <div className="h-4 bg-gray-200 rounded w-1/2 mx-auto"></div>
+            </div>
+          </div>
+        </div>
+      </main>
+    }>
+      <UnsubscribeContent />
+    </Suspense>
   );
 }
