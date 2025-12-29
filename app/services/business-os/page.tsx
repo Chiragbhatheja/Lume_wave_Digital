@@ -2,7 +2,10 @@ import Image from 'next/image';
 import ContactForm from '@/components/ContactForm';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
-export const metadata = genMeta('services/business-os');
+export const dynamic = 'force-dynamic';
+export async function generateMetadata() {
+  return genMeta('services/business-os');
+}
 
 interface PillarProps {
   step: string;

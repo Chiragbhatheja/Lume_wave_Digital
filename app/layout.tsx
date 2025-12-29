@@ -7,6 +7,7 @@ import Providers from "@/components/Providers";
 import CustomCursor from "@/components/CustomCursor";
 import CookieConsent from "@/components/CookieConsent";
 import ScrollToTop from "@/components/ScrollToTop";
+import AnalyticsTracker from "@/components/AnalyticsTracker";
 
 const poppins = Poppins({ 
   weight: ['400', '500', '600', '700', '800', '900'],
@@ -28,6 +29,9 @@ export const metadata: Metadata = {
     template: "%s | LumeWave Digital",
   },
   description: "Integrated digital innovation – from SaaS development to cinematic stories.",
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+  },
   alternates: {
     canonical: baseUrl,
   },
@@ -95,6 +99,7 @@ export default function RootLayout({
           </main>
           <Footer />
           <CookieConsent />
+          <AnalyticsTracker />
           <ScrollToTop />
         </Providers>
       </body>

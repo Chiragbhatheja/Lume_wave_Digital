@@ -1,7 +1,10 @@
 import About from '@/components/About';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
-export const metadata = genMeta('about');
+export const dynamic = 'force-dynamic';
+export async function generateMetadata() {
+  return genMeta('about');
+}
 
 export default function AboutPage() {
   return (

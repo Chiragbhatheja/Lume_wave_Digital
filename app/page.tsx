@@ -8,7 +8,10 @@ import Projects from '@/components/Projects';
 import ContactForm from '@/components/ContactForm';
 import { generateMetadata as genMeta } from '@/lib/seo';
 
-export const metadata = genMeta('home');
+export const dynamic = 'force-dynamic';
+export async function generateMetadata() {
+  return genMeta('home');
+}
 
 export default function Home() {
   return (

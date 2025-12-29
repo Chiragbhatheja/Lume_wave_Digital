@@ -1,37 +1,12 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import Link from 'next/link';
 
 export default function CookieConsent() {
-  const [showBanner, setShowBanner] = useState(false);
+  const [cookieChoice, setCookieChoice] = useState<'accepted' | 'rejected' | null>(null);
 
-  useEffect(() => {
-    // Check if user has already made a choice
-    const cookieConsent = localStorage.getItem('cookieConsent');
-    if (!cookieConsent) {
-      setShowBanner(true);
-      // Enable analytics by default
-      loadAnalytics();
-    } else if (cookieConsent === 'accepted') {
-      // User already accepted, load analytics
-      loadAnalytics();
-    }
-  }, []);
-
-  const loadAnalytics = () => {
-    // Load Google Analytics
-    if (process.env.NEXT_PUBLIC_GA_ID) {
-      loadGoogleAnalytics();
-    }
-
-    // Load Meta Pixel
-    if (process.env.NEXT_PUBLIC_META_PIXEL_ID) {
-      loadMetaPixel();
-    }
-  };
-
-  const loadGoogleAnalytics = () => {
+  const loadGoogleAnalytics = useCallback(() => {
     if (typeof window === 'undefined') return;
 
     const gaId = process.env.NEXT_PUBLIC_GA_ID;
@@ -40,25 +15,28 @@ export default function CookieConsent() {
       return;
     }
 
-    // Add gtag script
     const script = document.createElement('script');
     script.async = true;
     script.src = `https://www.googletagmanager.com/gtag/js?id=${gaId}`;
     document.head.appendChild(script);
 
-    // Initialize dataLayer
-    (window as any).dataLayer = (window as any).dataLayer || [];
-    function gtag(...args: any[]) {
-      (window as any).dataLayer.push(args);
+    const typedWindow = window as unknown as Window & {
+      dataLayer: unknown[];
+      gtag: (...args: unknown[]) => void;
+    };
+
+    typedWindow.dataLayer = typedWindow.dataLayer || [];
+    function gtag(...args: unknown[]) {
+      typedWindow.dataLayer.push(args);
     }
-    (window as any).gtag = gtag;
+    typedWindow.gtag = gtag;
     gtag('js', new Date());
     gtag('config', gaId, {
       page_path: window.location.pathname,
     });
-  };
+  }, []);
 
-  const loadMetaPixel = () => {
+  const loadMetaPixel = useCallback(() => {
     if (typeof window === 'undefined') return;
 
     const pixelId = process.env.NEXT_PUBLIC_META_PIXEL_ID;
@@ -67,7 +45,6 @@ export default function CookieConsent() {
       return;
     }
 
-    // Load Facebook Pixel
     const script = document.createElement('script');
     script.innerHTML = `
       !function(f,b,e,v,n,t,s)
@@ -83,26 +60,48 @@ export default function CookieConsent() {
     `;
     document.head.appendChild(script);
 
-    // Add noscript fallback
     const noscript = document.createElement('noscript');
     noscript.innerHTML = `
       <img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=${pixelId}&ev=PageView&noscript=1" />
     `;
     document.body.appendChild(noscript);
-  };
+  }, []);
+
+  const loadAnalytics = useCallback(() => {
+    if (process.env.NEXT_PUBLIC_GA_ID) {
+      loadGoogleAnalytics();
+    }
+
+    if (process.env.NEXT_PUBLIC_META_PIXEL_ID) {
+      loadMetaPixel();
+    }
+  }, [loadGoogleAnalytics, loadMetaPixel]);
+
+  useEffect(() => {
+    // Check if user has already made a choice
+    const cookieConsent = localStorage.getItem('cookieConsent');
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setCookieChoice(cookieConsent as 'accepted' | 'rejected' | null);
+
+    if (!cookieConsent || cookieConsent === 'accepted') {
+      loadAnalytics();
+    }
+  }, [loadAnalytics]);
 
   const handleAccept = () => {
     localStorage.setItem('cookieConsent', 'accepted');
     document.cookie = 'cookieConsent=accepted; path=/; max-age=31536000'; // 1 year
-    setShowBanner(false);
+    setCookieChoice('accepted');
   };
 
   const handleReject = () => {
     localStorage.setItem('cookieConsent', 'rejected');
     document.cookie = 'cookieConsent=rejected; path=/; max-age=31536000';
-    setShowBanner(false);
+    setCookieChoice('rejected');
   };
+
+  const showBanner = cookieChoice === null;
 
   if (!showBanner) return null;
 

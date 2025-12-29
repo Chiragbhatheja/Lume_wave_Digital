@@ -60,7 +60,7 @@ export default function Projects() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
         <p className="font-inter text-sm uppercase tracking-[0.2em] text-[#00407a]/60 mb-3">Featured Projects</p>
         <h2 className="font-poppins text-3xl md:text-4xl font-bold text-[#001f3f] mb-4">
-          Explore our latest work and success stories
+          Work That Turned Strategy Into Results
         </h2>
       </div>
 

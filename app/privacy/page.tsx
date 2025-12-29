@@ -17,7 +17,7 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="font-poppins text-2xl font-bold text-[#001f3f] mb-4">1. Introduction</h2>
             <p className="leading-relaxed">
-              LumeWave Digital ("we," "us," "our," or "Company") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, including any other media form, media channel, mobile website, or mobile application related or connected thereto (collectively, the "Site").
+              LumeWave Digital (&quot;we,&quot; &quot;us,&quot; &quot;our,&quot; or &quot;Company&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, including any other media form, media channel, mobile website, or mobile application related or connected thereto (collectively, the &quot;Site&quot;).
             </p>
           </section>
 
@@ -58,7 +58,7 @@ export default function PrivacyPolicy() {
             <p className="leading-relaxed mb-4">We may share your information in the following situations:</p>
             
             <h3 className="font-poppins text-xl font-semibold text-[#003366] mb-3">By Law or to Protect Rights</h3>
-            <p className="leading-relaxed mb-4">If we believe the release of information about you is necessary to comply with the law, enforce our Site policies, or protect ours or others' rights, property, or safety.</p>
+            <p className="leading-relaxed mb-4">If we believe the release of information about you is necessary to comply with the law, enforce our Site policies, or protect ours or others&apos; rights, property, or safety.</p>
             
             <h3 className="font-poppins text-xl font-semibold text-[#003366] mb-3">Third-Party Service Providers</h3>
             <p className="leading-relaxed">We may share your information with parties that perform services for us or on our behalf, including payment processing, data analysis, email delivery, hosting services, customer service, and marketing assistance.</p>

@@ -18,7 +18,7 @@ export default function TermsOfService() {
           <section>
             <h2 className="font-poppins text-2xl font-bold text-[#001f3f] mb-4">1. Acceptance of Terms</h2>
             <p className="leading-relaxed">
-              By accessing or using the website and services provided by LumeWave Digital ("we," "us," or "our"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use our website or services.
+              By accessing or using the website and services provided by LumeWave Digital (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;), you agree to be bound by these Terms of Service (&quot;Terms&quot;). If you do not agree to these Terms, please do not use our website or services.
             </p>
           </section>
 
@@ -60,14 +60,14 @@ export default function TermsOfService() {
           <section>
             <h2 className="font-poppins text-2xl font-bold text-[#001f3f] mb-4">7. Prohibited Uses</h2>
             <p className="leading-relaxed">
-              You agree not to misuse the site, including but not limited to engaging in any activity that could damage, disable, overburden, or impair the site, or interfere with any other party's use of the site.
+              You agree not to misuse the site, including but not limited to engaging in any activity that could damage, disable, overburden, or impair the site, or interfere with any other party&apos;s use of the site.
             </p>
           </section>
 
           <section>
             <h2 className="font-poppins text-2xl font-bold text-[#001f3f] mb-4">8. Disclaimer of Warranties</h2>
             <p className="leading-relaxed">
-              The site and its content are provided on an "as is" and "as available" basis without warranties of any kind, express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement.
+              The site and its content are provided on an &quot;as is&quot; and &quot;as available&quot; basis without warranties of any kind, express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement.
             </p>
           </section>
 

@@ -55,7 +55,7 @@ export default function Footer() {
               />
             </Link>
             <p className="font-inter text-sm text-[#00407a] leading-relaxed mb-6">
-              Transforming brands through integrated digital innovation and cinematic storytelling.
+              Where Clarity, Leads, and Automation Become Growth
             </p>
             {/* Social Links */}
             <div className="flex items-center gap-4">

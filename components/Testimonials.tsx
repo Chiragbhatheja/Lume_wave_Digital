@@ -72,7 +72,7 @@ export default function Testimonials() {
         <div className="mb-12 space-y-4">
           <p className="font-inter text-sm uppercase tracking-[0.2em] text-[#00407a]/60">BY THE NUMBERS</p>
           <h2 className="font-poppins text-3xl md:text-4xl font-bold text-[#001f3f]">
-            What working with us actually feels like.
+            What It Looks Like When Growth Becomes Predictable
           </h2>
           <p className="font-inter text-base md:text-lg text-[#003366] max-w-2xl leading-relaxed">
               Founder led businesses across different stages rely on us to build systems that work websites, inbound engines, and internal tools.

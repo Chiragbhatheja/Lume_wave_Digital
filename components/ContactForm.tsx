@@ -13,8 +13,6 @@ export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
-  const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
-
   const services = [
     'Growth System Foundation',
     'Inbound Engine',
@@ -35,28 +33,18 @@ export default function ContactForm() {
     setIsSubmitting(true);
     setSubmitStatus('idle');
 
-    if (!accessKey) {
-      console.error('Missing NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY');
-      setSubmitStatus('error');
-      setIsSubmitting(false);
-      return;
-    }
-
     try {
-      const response = await fetch('https://api.web3forms.com/submit', {
+      const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          access_key: accessKey,
           name: formData.name,
           email: formData.email,
           phone: formData.phone,
           service: formData.service,
-          message: formData.requirement,
-          from_name: 'LumeWave Digital Website',
-          subject: `New Contact Form Submission - ${formData.service}`,
+          requirement: formData.requirement,
         }),
       });
 

@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 
 interface CookiePreferences {
@@ -8,33 +8,37 @@ interface CookiePreferences {
   analytics: boolean;
 }
 
+interface CookieData {
+  [key: string]: string;
+}
+
 export default function CookieSettings() {
-  const [preferences, setPreferences] = useState<CookiePreferences>({
-    essential: true,
-    analytics: true, // Enabled by default
+  const [preferences, setPreferences] = useState<CookiePreferences>(() => {
+    if (typeof window !== 'undefined') {
+      const savedPreferences = localStorage.getItem('cookiePreferences');
+      if (savedPreferences) {
+        return JSON.parse(savedPreferences);
+      }
+    }
+    return {
+      essential: true,
+      analytics: true,
+    };
   });
-  const [cookies, setCookies] = useState<any>({});
+function parseCookies(): CookieData {
+  const allCookies: CookieData = {};
+  if (typeof document !== 'undefined') {
+    document.cookie.split(';').forEach((cookie) => {
+      const [name, value] = cookie.split('=');
+      if (name?.trim()) {
+        allCookies[name.trim()] = decodeURIComponent(value || '');
+      }
+    });
+  }
+  return allCookies;
+}
 
-  useEffect(() => {
-    // Load saved preferences
-    const savedPreferences = localStorage.getItem('cookiePreferences');
-    if (savedPreferences) {
-      const prefs = JSON.parse(savedPreferences);
-      setPreferences(prefs);
-    }
-
-    // Parse all cookies
-    const allCookies: any = {};
-    if (typeof document !== 'undefined') {
-      document.cookie.split(';').forEach((cookie) => {
-        const [name, value] = cookie.split('=');
-        if (name.trim()) {
-          allCookies[name.trim()] = decodeURIComponent(value || '');
-        }
-      });
-      setCookies(allCookies);
-    }
-  }, []);
+  const [cookies] = useState<CookieData>(() => parseCookies());
 
   const handleToggle = (type: 'essential' | 'analytics') => {
     const newPrefs = { ...preferences };
@@ -151,7 +155,7 @@ export default function CookieSettings() {
                     </tr>
                   </thead>
                   <tbody>
-                    {Object.entries(cookies).map(([name, value]: [string, any]) => (
+                    {Object.entries(cookies).map(([name, value]: [string, string]) => (
                       <tr key={name} className="border-b border-[#f0f7ff]">
                         <td className="py-3 px-2 text-[#003366] font-mono text-xs">{name}</td>
                         <td className="py-3 px-2 text-[#00407a] font-mono text-xs truncate max-w-xs">

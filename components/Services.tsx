@@ -29,10 +29,10 @@ export default function Services() {
         <div className="mb-10 space-y-3">
           <p className="font-inter text-xs uppercase tracking-[0.25em] text-slate-500">Our Growth Systems</p>
           <h2 className="font-poppins text-3xl md:text-4xl font-bold text-[#0f1024]">
-            Three offers, one growth engine
+            Everything Your Business Needs to Grow
           </h2>
           <p className="text-slate-600 max-w-2xl text-sm md:text-base">
-            Pick the layer you need foundation, predictable inbound, or an automated business OS. The middle card is your highest ROI path.
+            Pick the layer you need foundation, predictable inbound, or an automated business OS. The middle card is our highest ROI path.
           </p>
         </div>
 

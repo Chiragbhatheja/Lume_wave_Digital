@@ -19,32 +19,17 @@ export default function SubscriptionForm() {
     setIsLoading(true);
 
     try {
-      const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
-      
-      if (!accessKey) {
-        console.error('Missing NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY');
-        alert('Configuration error. Please try again later.');
-        setIsLoading(false);
-        return;
-      }
-
-      const response = await fetch('https://api.web3forms.com/submit', {
+      const response = await fetch('/api/subscription', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({
-          access_key: accessKey,
-          email: email,
-          message: `New Subscription\n\nEmail: ${email}\nTimestamp: ${new Date().toISOString()}`,
-          subject: `New Subscriber - ${email}`,
-          from_name: 'LumeWave Digital - Insights',
-        }),
+        body: JSON.stringify({ email }),
       });
 
       const result = await response.json();
 
-      if (result.success) {
+      if (response.ok && result.success) {
         setSubmitted(true);
         setTimeout(() => {
           setIsOpen(false);
@@ -52,7 +37,7 @@ export default function SubscriptionForm() {
           setSubmitted(false);
         }, 2000);
       } else {
-        alert('Something went wrong. Please try again.');
+        alert(result.error || 'Something went wrong. Please try again.');
       }
     } catch (error) {
       console.error('Subscription error:', error);
@@ -125,7 +110,7 @@ export default function SubscriptionForm() {
                   Get Insights
                 </h3>
                 <p className="font-inter text-sm text-[#003366] mb-6 leading-relaxed">
-                  Occasional insights on building clarity, inbound systems, and automation — shared with founders who want growth without chaos.
+                  Occasional insights on building clarity, inbound systems, and automation shared with founders who want growth without chaos.
                 </p>
 
                 <form onSubmit={handleSubmit} className="space-y-4">

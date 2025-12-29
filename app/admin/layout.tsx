@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
+import AdminSidebar from '@/components/AdminSidebar';
 
 export default function AdminLayout({
   children,
@@ -75,22 +76,27 @@ export default function AdminLayout({
 
   if (!authenticated) {
     return (
-      <div className="min-h-screen bg-[#f7f9fc] flex items-center justify-center px-4">
+      <div className="min-h-screen bg-gradient-to-br from-[#f7f9fc] to-[#eef0ff] flex items-center justify-center px-4">
         <div className="w-full max-w-md">
           <div className="bg-white rounded-2xl shadow-xl border border-[#e8f1f7] p-8">
             <div className="text-center mb-8">
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-[#1ba9e8] to-[#0a66a9] mb-4">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
               <h1 className="font-poppins text-3xl font-bold text-[#001f3f] mb-2">
-                Admin Login
+                Admin Panel
               </h1>
               <p className="font-inter text-[#00407a]">
-                Enter your credentials to access the admin panel
+                Sign in to manage your website
               </p>
             </div>
 
             <form onSubmit={handleLogin} className="space-y-6">
               {error && (
-                <div className="bg-red-50 border border-red-200 text-red-800 px-4 py-3 rounded-lg text-sm">
-                  {error}
+                <div className="bg-red-50 border border-red-200 text-red-800 px-4 py-3 rounded-lg text-sm font-inter">
+                  ✗ {error}
                 </div>
               )}
 
@@ -103,7 +109,7 @@ export default function AdminLayout({
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  className="w-full px-4 py-3 border border-[#e8f1f7] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1ba9e8] font-inter"
+                  className="w-full px-4 py-3 border border-[#e8f1f7] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1ba9e8] font-inter bg-white"
                   placeholder="admin@example.com"
                   autoComplete="email"
                 />
@@ -118,7 +124,7 @@ export default function AdminLayout({
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
-                  className="w-full px-4 py-3 border border-[#e8f1f7] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1ba9e8] font-inter"
+                  className="w-full px-4 py-3 border border-[#e8f1f7] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1ba9e8] font-inter bg-white"
                   placeholder="Enter your password"
                   autoComplete="current-password"
                 />
@@ -127,22 +133,25 @@ export default function AdminLayout({
               <button
                 type="submit"
                 disabled={loading}
-                className={`w-full py-3 rounded-lg font-semibold transition-all ${
+                className={`w-full py-3 rounded-lg font-semibold font-inter transition-all ${
                   loading
                     ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
-                    : 'bg-[#1ba9e8] hover:bg-[#1598d4] text-white shadow-md hover:shadow-lg'
+                    : 'bg-gradient-to-r from-[#1ba9e8] to-[#0a66a9] hover:shadow-lg text-white shadow-md'
                 }`}
               >
-                {loading ? 'Logging in...' : 'Login'}
+                {loading ? 'Signing in...' : 'Sign In'}
               </button>
             </form>
 
             <div className="mt-6 text-center">
               <Link
                 href="/"
-                className="font-inter text-sm text-[#1ba9e8] hover:text-[#1598d4] transition-colors"
+                className="font-inter text-sm text-[#1ba9e8] hover:text-[#1598d4] transition-colors inline-flex items-center gap-2"
               >
-                ← Back to website
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+                Back to website
               </Link>
             </div>
           </div>
@@ -152,23 +161,33 @@ export default function AdminLayout({
   }
 
   return (
-    <div>
-      <div className="bg-white border-b border-[#e8f1f7] px-4 py-3">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="flex items-center gap-2">
-            <span className="font-poppins font-semibold text-[#001f3f]">Admin Panel</span>
-            <span className="text-[#00407a]/60">•</span>
-            <span className="font-inter text-sm text-[#00407a]/60">{email}</span>
+    <div className="flex min-h-screen bg-[#f7f9fc]">
+      {/* Sidebar */}
+      <AdminSidebar email={email} onLogout={handleLogout} />
+
+      {/* Main Content */}
+      <main className="flex-1 lg:ml-64">
+        {/* Top Bar */}
+        <div className="hidden lg:block bg-white border-b border-[#e8f1f7] sticky top-0 z-30">
+          <div className="px-6 py-4 flex justify-between items-center">
+            <div>
+              <h1 className="font-poppins text-sm uppercase tracking-wide text-[#00407a] font-semibold">
+                Welcome back
+              </h1>
+            </div>
+            <div className="text-right">
+              <p className="font-inter text-sm text-[#003366]">{email}</p>
+            </div>
           </div>
-          <button
-            onClick={handleLogout}
-            className="px-4 py-2 text-sm font-inter text-[#00407a] hover:text-[#FF4B4B] transition-colors"
-          >
-            Logout
-          </button>
         </div>
-      </div>
-      {children}
+
+        {/* Page Content */}
+        <div className="pt-20 lg:pt-0">
+          {children}
+        </div>
+      </main>
     </div>
   );
 }
+
+
