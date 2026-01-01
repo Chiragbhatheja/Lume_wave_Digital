@@ -20,14 +20,14 @@ export default function Hero() {
           }`}
         >
           <h1 className="font-poppins text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-[#001f3f] leading-tight tracking-tight">
-            From Building Your Brand to{' '}
+            Turn your business into a{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF4B4B] to-[#1ba9e8]">
-              Transforming Your Story
+              predictable growth engine
             </span>
           </h1>
           
           <p className="font-inter text-base sm:text-lg md:text-xl text-[#00407a] leading-relaxed">
-            Turn your business into a predictable growth engine 
+            where clarity, Leads & automations become growth
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2 sm:pt-4">
