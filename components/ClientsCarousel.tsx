@@ -8,9 +8,9 @@ export default function ClientsCarousel() {
     { name: 'Client 1', logo: '/clients/shj logo.png' },
     { name: 'Client 2', logo: '/clients/client_2.png' },
     { name: 'Client 3', logo: '/clients/client_3.svg' },
-    { name: 'Client 4', logo: '/clients/client_4.png' },
-    { name: 'Client 5', logo: '/clients/client_5.png' },
-    { name: 'Client 6', logo: '/clients/client_6.png' },
+    { name: 'Client 4', logo: '/clients/Client_4.png' },
+    { name: 'Client 5', logo: '/clients/Client_5.png' },
+    { name: 'Client 6', logo: '/clients/Client_6.png' },
     { name: 'Client 7', logo: '/clients/Client_7.png' },
   ];
 
