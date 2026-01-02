@@ -166,7 +166,7 @@ That’s how we approach growth — with structure, intention, and long-term thi
           Let&apos;s chat about your project, goals, and vision. Get a free consultation today.
         </p>
         <Link
-          href="/#contact"
+          href="/contact"
           className="inline-block bg-gradient-to-r from-[#1ba9e8] to-[#0a66a9] hover:from-[#0a66a9] hover:to-[#003366] text-white font-poppins font-semibold px-8 py-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
         >
           Get in Touch

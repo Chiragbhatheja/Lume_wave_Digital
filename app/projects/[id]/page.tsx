@@ -56,7 +56,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         <div className="text-center">
           <h1 className="text-4xl font-bold text-[#001f3f] mb-4">Project Not Found</h1>
           <p className="text-gray-600 mb-6">The project you&apos;re looking for doesn&apos;t exist.</p>
-          <Link href="/#projects" className="inline-block px-6 py-3 bg-[#1ba9e8] text-white rounded-lg hover:bg-[#0a66a9]">
+          <Link href="/projects" className="inline-block px-6 py-3 bg-[#1ba9e8] text-white rounded-lg hover:bg-[#0a66a9]">
             Back to Projects
           </Link>
         </div>
@@ -69,7 +69,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#f5f9fc] to-white">
       <article className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <Link href="/#projects" className="inline-flex items-center text-[#1ba9e8] hover:text-[#0a66a9] font-semibold mb-8 transition-colors">
+        <Link href="/projects" className="inline-flex items-center text-[#1ba9e8] hover:text-[#0a66a9] font-semibold mb-8 transition-colors">
           <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
           </svg>
@@ -127,10 +127,10 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         <div className="prose prose-lg max-w-none" dangerouslySetInnerHTML={{ __html: contentHtml }} />
 
         <div className="mt-12 pt-8 border-top border-gray-200 flex flex-col sm:flex-row gap-4">
-          <Link href="/#projects" className="inline-block px-8 py-3 bg-[#1ba9e8] text-white rounded-lg font-semibold hover:bg-[#0a66a9] transition-colors shadow-lg text-center">
+          <Link href="/projects" className="inline-block px-8 py-3 bg-[#1ba9e8] text-white rounded-lg font-semibold hover:bg-[#0a66a9] transition-colors shadow-lg text-center">
             View More Projects
           </Link>
-          <Link href="/#contact" className="inline-block px-8 py-3 bg-white text-[#1ba9e8] border-2 border-[#1ba9e8] rounded-lg font-semibold hover:bg-[#1ba9e8] hover:text-white transition-colors text-center">
+          <Link href="/contact" className="inline-block px-8 py-3 bg-white text-[#1ba9e8] border-2 border-[#1ba9e8] rounded-lg font-semibold hover:bg-[#1ba9e8] hover:text-white transition-colors text-center">
             Start Your Project
           </Link>
         </div>

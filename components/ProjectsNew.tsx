@@ -82,7 +82,7 @@ export default function Projects() {
                 {project.description}
               </p>
               <Link
-                href="#contact"
+                href="/contact"
                 className="inline-flex items-center gap-2 text-[#1ba9e8] hover:text-[#0a66a9] font-semibold transition-colors duration-200"
               >
                 Learn More

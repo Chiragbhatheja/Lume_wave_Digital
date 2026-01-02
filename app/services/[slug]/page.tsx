@@ -95,7 +95,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#001f3f] to-[#003366] text-white pt-20 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link href="/#services" className="text-[#1ba9e8] hover:text-white mb-4 inline-block">
+          <Link href="/services" className="text-[#1ba9e8] hover:text-white mb-4 inline-block">
             ← Back to Services
           </Link>
           <h1 className="text-5xl md:text-6xl font-bold font-poppins mb-4">{service.title}</h1>
@@ -169,7 +169,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
         <div className="bg-gradient-to-br from-[#1ba9e8] to-[#0a66a9] rounded-3xl p-12 text-white text-center">
           <h2 className="text-4xl font-bold font-poppins mb-4">Ready to Get Started?</h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto">Let&apos;s discuss how this service can help your business grow.</p>
-          <Link href="#contact" className="inline-block px-8 py-4 bg-white text-[#1ba9e8] font-semibold rounded-full hover:bg-gray-100 transition-colors">
+          <Link href="/contact" className="inline-block px-8 py-4 bg-white text-[#1ba9e8] font-semibold rounded-full hover:bg-gray-100 transition-colors">
             Get Free Consultation
           </Link>
         </div>

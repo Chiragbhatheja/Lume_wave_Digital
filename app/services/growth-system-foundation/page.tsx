@@ -212,7 +212,7 @@ export default function GrowthSystemFoundation() {
               Let&apos;s discuss how the Growth System Foundation can transform your business clarity and lead flow.
             </p>
             <a
-              href="#contact-form"
+              href="/contact"
               className="inline-flex items-center gap-2 px-8 py-4 bg-[#1ba9e8] text-white font-semibold rounded-lg hover:bg-[#1592d3] transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               Start a Conversation

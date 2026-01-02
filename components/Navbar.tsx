@@ -17,11 +17,11 @@ export default function Navbar() {
   }, []);
 
   const navItems = [
-    { name: 'Home', href: '/#home' },
+    { name: 'Home', href: '/' },
     { name: 'About Us', href: '/about' },
-    { name: 'Services', href: '/#services' },
-    { name: 'Projects', href: '/#projects' },
-    { name: 'Contact Us', href: '/#contact' },
+    { name: 'Services', href: '/services' },
+    { name: 'Projects', href: '/projects' },
+    { name: 'Contact Us', href: '/contact' },
   ];
 
   return (

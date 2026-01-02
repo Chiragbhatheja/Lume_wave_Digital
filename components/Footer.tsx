@@ -8,21 +8,21 @@ export default function Footer() {
 
   const footerLinks = {
     Company: [
-      { name: 'Home', href: '/#home' },
+      { name: 'Home', href: '/' },
       { name: 'About Us', href: '/about' },
-      { name: 'Services', href: '/#services' },
-      { name: 'Projects', href: '/#projects' },
+      { name: 'Services', href: '/services' },
+      { name: 'Projects', href: '/projects' },
     ],
     Resources: [
       
-      { name: 'Case Studies', href: '/#projects' },
-      { name: 'Contact', href: '/#contact' },
+      { name: 'Case Studies', href: '/projects' },
+      { name: 'Contact', href: '/contact' },
       { name: 'Privacy Policy', href: '/privacy' },
     ],
     Services: [
-      { name: 'Growth System Foundation', href: '/#services' },
-      { name: 'Inbound Engine', href: '/#services' },
-      { name: 'Business OS', href: '/#services' },
+      { name: 'Growth System Foundation', href: '/services/growth-system-foundation' },
+      { name: 'Inbound Engine', href: '/services/inbound-engine' },
+      { name: 'Business OS', href: '/services/business-os' },
       
     ],
     Contact: [
