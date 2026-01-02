@@ -5,13 +5,23 @@ const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date().toISOString();
 
-  // Static core routes. If you later expose APIs for projects/services, we can extend this dynamically.
+  // Static core routes (no fragment URLs; Google ignores those).
   const routes = [
     '',
     '/about',
-    '/#services',
-    '/#projects',
-    '/#contact',
+    '/services',
+    '/services/business-os',
+    '/services/growth-system-foundation',
+    '/services/inbound-engine',
+    '/projects',
+    '/projects/brand-campaign',
+    '/projects/ecommerce-platform',
+    '/projects/founder-led-business-website',
+    '/projects/internal-billing-ops',
+    '/projects/mobile-app-launch',
+    '/projects/saas-dashboard',
+    '/projects/social-media-campaign-system',
+    '/contact',
     '/privacy',
     '/terms',
     '/cookie-settings',
