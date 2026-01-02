@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins, Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -21,6 +22,25 @@ const inter = Inter({
 });
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "LumeWave Digital",
+  url: baseUrl,
+  logo: `${baseUrl}/logo.png`,
+  sameAs: [
+    "https://www.linkedin.com/company/lumewavedigital/",
+    "https://www.instagram.com/lumewavedigital?igsh=cm9icTFoNHFjZDZw",
+  ],
+};
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "LumeWave Digital",
+  url: baseUrl,
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -91,6 +111,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.variable} ${inter.variable} font-inter`}>
+        <Script
+          id="ld-org"
+          type="application/ld+json"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
+        <Script
+          id="ld-website"
+          type="application/ld+json"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
         <Providers>
           <CustomCursor />
           <Navbar />
