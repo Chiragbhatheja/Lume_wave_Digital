@@ -188,7 +188,7 @@ export default function InboundEngine() {
               Let&apos;s design an Inbound Engine that brings predictable, qualified inquiries without constant outreach.
             </p>
             <a
-              href="/contact"
+              href="/#contact"
               className="inline-flex items-center gap-2 px-8 py-4 bg-[#1ba9e8] text-white font-semibold rounded-lg hover:bg-[#1592d3] transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               Start a Conversation

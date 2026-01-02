@@ -74,7 +74,7 @@ export default function WhoWeAreFor() {
 
               <div className="pt-4">
                 <Link
-                  href="/contact"
+                  href="/#contact"
                   className="inline-flex items-center justify-center gap-2 w-full px-6 py-3.5 bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-semibold rounded-full hover:shadow-lg hover:shadow-emerald-500/40 transition-all duration-300 hover:scale-[1.02]"
                 >
                   I&apos;m a Fit Let&apos;s Talk

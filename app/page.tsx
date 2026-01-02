@@ -7,6 +7,7 @@ import Testimonials from '@/components/Testimonials';
 import Projects from '@/components/Projects';
 import ContactForm from '@/components/ContactForm';
 import { generateMetadata as genMeta } from '@/lib/seo';
+import HashScrollManager from '@/components/HashScrollManager';
 
 export const dynamic = 'force-dynamic';
 export async function generateMetadata() {
@@ -16,6 +17,7 @@ export async function generateMetadata() {
 export default function Home() {
   return (
     <div className="relative min-h-screen overflow-hidden bg-[#f7f9fc]">
+      <HashScrollManager />
       {/* Background gravity layer for cohesive flow */}
       <div className="pointer-events-none absolute inset-0 opacity-90" aria-hidden>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_12%_18%,rgba(27,169,232,0.09),transparent_35%),radial-gradient(circle_at_82%_10%,rgba(255,107,107,0.08),transparent_34%),radial-gradient(circle_at_50%_85%,rgba(0,64,122,0.06),transparent_36%)]" />

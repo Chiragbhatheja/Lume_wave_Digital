@@ -32,13 +32,13 @@ export default function Hero() {
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2 sm:pt-4">
             <a 
-              href="/contact"
+              href="/#contact"
               className="px-6 sm:px-8 py-3 sm:py-4 bg-[#FF4B4B] hover:bg-[#f33a3a] text-white font-semibold rounded-full transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105 text-center text-sm sm:text-base"
             >
               Get Free Proposal
             </a>
             <a 
-              href="/contact"
+              href="/#contact"
               className="px-6 sm:px-8 py-3 sm:py-4 bg-transparent border-2 border-[#001f3f] text-[#001f3f] hover:bg-[#001f3f] hover:text-white font-semibold rounded-full transition-all duration-200 text-center text-sm sm:text-base"
             >
               Start the Journey
