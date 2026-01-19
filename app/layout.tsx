@@ -28,7 +28,7 @@ const organizationJsonLd = {
   "@type": "Organization",
   name: "LumeWave Digital",
   url: baseUrl,
-  logo: `${baseUrl}/logo.png`,
+  logo: `${baseUrl}/favicon_io/android-chrome-512x512.png`,
   sameAs: [
     "https://www.linkedin.com/company/lumewavedigital/",
     "https://www.instagram.com/lumewavedigital?igsh=cm9icTFoNHFjZDZw",
