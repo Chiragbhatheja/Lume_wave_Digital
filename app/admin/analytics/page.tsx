@@ -46,7 +46,29 @@ export default function AnalyticsAdminPage() {
   const [days, setDays] = useState(30);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [autoRefresh, setAutoRefresh] = useState(true);
+  const [autoRefresh, setAutoRefreshState] = useState<boolean | null>(null);
+
+  // Load autoRefresh preference from localStorage on mount
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem('analyticsAutoRefresh');
+      setAutoRefreshState(saved === null ? true : saved === 'true');
+    } catch {
+      setAutoRefreshState(true);
+    }
+  }, []);
+
+  const setAutoRefresh = (value: boolean | ((prev: boolean) => boolean)) => {
+    setAutoRefreshState((prev) => {
+      const newValue = typeof value === 'function' ? value(prev ?? true) : value;
+      try {
+        localStorage.setItem('analyticsAutoRefresh', String(newValue));
+      } catch {
+        // Ignore localStorage errors
+      }
+      return newValue;
+    });
+  };
 
   const load = async (d: number) => {
     try {
@@ -70,7 +92,7 @@ export default function AnalyticsAdminPage() {
 
   // Auto-refresh polling
   useEffect(() => {
-    if (!autoRefresh) return;
+    if (autoRefresh === null || !autoRefresh) return;
     const id = setInterval(() => {
       load(days);
     }, 10000); // 10s
@@ -91,15 +113,22 @@ export default function AnalyticsAdminPage() {
 
       <div className="mb-6 flex items-center gap-3 flex-wrap">
         <span className="font-inter text-sm text-[#003366]">Period:</span>
-        {[7, 14, 30, 90].map((d) => (
+        {[
+          { value: 0.042, label: 'Realtime' },
+          { value: 1, label: '24h' },
+          { value: 7, label: '7d' },
+          { value: 14, label: '14d' },
+          { value: 30, label: '30d' },
+          { value: 90, label: '90d' },
+        ].map((d) => (
           <button
-            key={d}
-            onClick={() => handleDaysChange(d)}
+            key={d.value}
+            onClick={() => handleDaysChange(d.value)}
             className={`px-3 py-1.5 rounded-md text-sm font-inter border ${
-              days === d ? 'bg-[#1ba9e8] text-white border-[#1ba9e8]' : 'bg-white text-[#003366] border-[#e8f1f7] hover:bg-[#f5f9fc]'
+              days === d.value ? 'bg-[#1ba9e8] text-white border-[#1ba9e8]' : 'bg-white text-[#003366] border-[#e8f1f7] hover:bg-[#f5f9fc]'
             }`}
           >
-            Last {d}d
+            {d.label}
           </button>
         ))}
 
@@ -108,11 +137,11 @@ export default function AnalyticsAdminPage() {
         <button
           onClick={() => setAutoRefresh((v) => !v)}
           className={`px-3 py-1.5 rounded-md text-sm font-inter border ${
-            autoRefresh ? 'bg-[#e6f7ff] text-[#0a66a9] border-[#bfe7ff]' : 'bg-white text-[#003366] border-[#e8f1f7]'
+            autoRefresh === null ? 'bg-gray-100' : autoRefresh ? 'bg-[#e6f7ff] text-[#0a66a9] border-[#bfe7ff]' : 'bg-white text-[#003366] border-[#e8f1f7]'
           }`}
           title="Toggle auto-refresh"
         >
-          {autoRefresh ? 'Auto-refresh: On' : 'Auto-refresh: Off'}
+          {autoRefresh === null ? 'Loading...' : autoRefresh ? 'Auto-refresh: On' : 'Auto-refresh: Off'}
         </button>
 
         <button

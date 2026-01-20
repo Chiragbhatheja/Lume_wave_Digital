@@ -1,7 +1,5 @@
 "use client";
 
-import SubscriptionForm from "./SubscriptionForm";
-
 export default function ProblemClarity() {
   const problems = [
     {
@@ -89,15 +87,6 @@ export default function ProblemClarity() {
         </div>
 
         {/* Subscription CTA */}
-        <div className="mt-12 text-center space-y-4">
-          <p className="font-inter text-sm text-[#003366] max-w-md mx-auto leading-relaxed">
-            Get occasional insights on building clarity, inbound systems, and automation
-          </p>
-          <p className="font-inter text-xs text-[#00407a]/60 max-w-md mx-auto">
-            Shared with founders who want growth without chaos.
-          </p>
-          <SubscriptionForm />
-        </div>
       </div>
     </section>
   );

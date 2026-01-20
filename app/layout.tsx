@@ -9,6 +9,7 @@ import CustomCursor from "@/components/CustomCursor";
 import CookieConsent from "@/components/CookieConsent";
 import ScrollToTop from "@/components/ScrollToTop";
 import AnalyticsTracker from "@/components/AnalyticsTracker";
+import SubscriptionModal from "@/components/SubscriptionModal";
 
 const poppins = Poppins({ 
   weight: ['400', '500', '600', '700', '800', '900'],
@@ -151,6 +152,7 @@ export default function RootLayout({
           <CookieConsent />
           <AnalyticsTracker />
           <ScrollToTop />
+           <SubscriptionModal />
         </Providers>
       </body>
     </html>
